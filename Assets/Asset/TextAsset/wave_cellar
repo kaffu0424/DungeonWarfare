@@ -1,0 +1,284 @@
+{
+	"waveCount": 12,
+	"waves":[
+        {
+            "wave": 1,
+            "postDelay": 10.0,
+            "spawn": [
+                { "interval": 1.0, "types": [ "Peasant", "Peasant", "Peasant", "Peasant", "King" ], "typeInterval": 1.5, "count": 5, "routes": [ 0 ] },
+                
+                { "interval": 1.0, "types": [ "Peasant", "Peasant", "Peasant", "Peasant", "King" ], 
+                  "typeInterval": 0.5, "count": 5, "routes": [ 0 ] },
+                
+{ "interval": 1.0, "types": [ "Peasant", "Peasant", "Peasant", "Peasant", "Peasant", "Peasant", "Peasant", "Peasant", "King" ], 
+  "typeInterval": 0.2, "count": 5, "routes": [ 0 ] },
+                
+{ "interval": 1.0, "types": [ "Warrior", "Warrior", "Warrior", "Warrior", "Warrior", "King" ], 
+  "typeInterval": 1.5, "count": 5, "routes": [ 0 ] },
+                   
+            ]
+        },
+		{
+            "wave": 2,
+            "postDelay": 10.0,
+			"spawn":[
+                { "interval": 1.5, "type": "Adventurer", "count": 25, "route": 0 },
+                { "interval": 0.6, "type": "Warrior", "count": 25, "route": 0 },
+                { "interval": 0.8, "type": "King", "count": 5, "route": 0 },
+
+                { "interval": 0.7, "type": "Adventurer", "count": 50, "route": 0 },
+                { "interval": 0.3, "type": "Warrior", "count": 30, "route": 0 },
+                { "interval": 0.8, "type": "King", "count": 5, "route": 0 },
+
+                { "interval": 0.3, "type": "Marksman", "count": 10, "route": 0 },
+                { "interval": 0.3, "type": "Knight", "count": 3, "route": 0 },
+                { "interval": 0.3, "type": "Priest", "count": 10, "route": 0 },
+                { "interval": 0.8, "type": "King", "count": 5, "route": 0 },
+
+                { "interval": 0.3, "type": "Dwarf", "count": 2, "route": 0 },
+                
+
+			]
+		},
+		{
+            "wave": 3,
+            "postDelay": 10.0,
+			"spawn":[
+
+                { "interval": 2.5, "types": [ "Peasant", "Adventurer" ], "typeInterval": 0.2, "count": 2, "routes": [ 1, 2 ] },
+
+                { "interval": 0.3, "type": "Druid", "count": 5, "route": 0 },
+                
+
+                { "interval": 0.3, "type": "Journeyman", "count": 2, "route": 0 },
+                { "interval": 0.3, "type": "Druid", "count": 5, "route": 0 },
+                
+
+                { "interval": 0.3, "type": "Knight", "count": 5, "route": 0 },
+                { "interval": 0.5, "type": "Warrior", "count": 50, "route": 0 },
+                { "interval": 0.9, "type": "Thief", "count": 10, "route": 0 },
+                
+			]
+		},
+		{
+            "wave": 4,
+            "postDelay": 10.0,
+			"spawn":[
+
+            { "interval": 2.5, "types": [ "Peasant", "Warrior" ], "typeInterval": 0.2, "count": 5, "routes": [ 1, 2 ] },
+                { "interval": 0.3, "type": "Thief", "count": 10, "route": 0 },
+                { "interval": 3.0, "type": "Wizard", "count": 1, "route": 0 },
+                
+                { "interval": 0.5, "type": "Marksman", "count": 5, "route": 0 },
+                { "interval": 0.3, "type": "Warrior", "count": 60, "route": 0 },
+                { "interval": 2.0, "type": "Warrior_Veteran", "count": 10, "route": 0 },
+                { "interval": 2.3, "type": "HeavyArmor", "count": 1, "route": 0 },
+                { "interval": 0.4, "type": "Priest", "count": 10, "route": 0 },
+
+			]
+		},
+		{
+            "wave": 5,
+            "postDelay": 10.0,
+			"spawn":[
+                { "interval": 0.1, "type": "Warrior", "count": 1, "route": 1 },
+                { "interval": 0.1, "type": "Warrior", "count": 1, "route": 2 },
+                
+
+                { "interval": 3.0, "type": "Wizard", "count": 1, "route": 0 },
+                { "interval": 1.5, "type": "Warrior_Veteran", "count": 10, "route": 0 },
+                { "interval": 0.4, "type": "Priest", "count": 10, "route": 0 },
+                { "interval": 1.5, "type": "Knight", "count": 10, "route": 0 },
+                { "interval": 0.4, "type": "Priest", "count": 10, "route": 0 },
+                { "interval": 2.5, "type": "HeavyArmor", "count": 10, "route": 0 },
+                { "interval": 0.4, "type": "Priest", "count": 10, "route": 0 },
+                { "interval": 1.0, "type": "Thief", "count": 30, "route": 0 },
+                { "interval": 0.2, "type": "Warrior", "count": 100, "route": 0 },
+                   
+			]
+		},
+        {
+            "wave": 6,
+            "postDelay": 10.0,
+            "spawn":[
+
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.1, "type": "Warrior", "count": 2, "routes": [1, 2] },
+                
+                { "interval": 0.1, "type": "Wizard", "count": 1, "routes": [1, 2] },
+                
+                { "interval": 0.5, "type": "Marksman", "count": 5, "route": 0 },
+                
+                { "interval": 0.1, "type": "Warrior", "count": 25, "route": 0 },
+                { "interval": 0.9, "type": "Priest", "count": 10, "route": 0 },
+                
+                { "interval": 0.5, "type": "Thief", "count": 10, "route": 0 },
+
+                { "interval": 0.1, "type": "Warrior", "count": 25, "route": 0 },
+                { "interval": 0.9, "type": "Priest", "count": 10, "route": 0 },
+
+                { "interval": 0.5, "type": "Thief", "count": 10, "route": 0 },
+
+                { "interval": 0.1, "type": "Warrior_Veteran", "count": 10, "route": 0 },
+                { "interval": 0.9, "type": "Priest", "count": 10, "route": 0 },
+                
+                { "interval": 0.5, "type": "Thief", "count": 10, "route": 0 },
+
+                { "interval": 2.5, "type": "HeavyArmor", "count": 15, "route": 0 },
+                { "interval": 0.5, "type": "Priest", "count": 10, "route": 0 },
+                
+                { "interval": 0.5, "type": "Thief", "count": 20, "route": 0 },
+                
+                { "interval": 0.1, "type": "Warrior", "count": 2, "route": 1 },
+                { "interval": 0.1, "type": "Warrior", "count": 2, "route": 2 },
+                
+                { "interval": 0.1, "type": "Wizard", "count": 1, "route": 1 },
+                { "interval": 0.1, "type": "Wizard", "count": 1, "route": 2 },
+                
+                   
+            ]
+        },
+        {
+            "wave": 7,
+            "postDelay": 10.0,
+            "spawn":[
+            { "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.1, "type": "Warrior", "count": 5, "route": 1 },
+                { "interval": 0.1, "type": "Warrior", "count": 5, "route": 2 },
+                
+                { "interval": 0.1, "type": "Wizard", "count": 1, "route": 1 },
+                { "interval": 0.1, "type": "Wizard", "count": 1, "route": 2 },
+                
+                { "interval": 1.5, "types": [ "Warrior", "Priest" ], "typeInterval": 0.2, "count": 5, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 2, "route": 0 },
+                { "interval": 0.1, "type": "Warrior", "count": 25, "route": 0 },
+                { "interval": 0.1, "type": "Warrior_Veteran", "count": 10, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 2, "route": 0 },
+                { "interval": 0.1, "type": "Adventurer", "count": 30, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 2, "route": 0 },
+                { "interval": 0.1, "type": "Adventurer", "count": 35, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 2, "route": 0 },
+                { "interval": 0.1, "type": "Adventurer", "count": 40, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 2, "route": 0 },
+                { "interval": 0.1, "type": "Thief", "count": 20, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 2, "route": 0 },
+                { "interval": 0.1, "type": "Thief", "count": 20, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.5, "type": "Horseman", "count": 4, "route": 0 },
+                { "interval": 0.1, "type": "Warrior", "count": 50, "route": 0 },
+                { "interval": 0.1, "type": "Warrior_Veteran", "count": 10, "route": 0 },
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.1, "type": "Warrior", "count": 5, "route": 1 },
+                { "interval": 0.1, "type": "Warrior", "count": 5, "route": 2 },
+                
+                { "interval": 0.1, "type": "Dwarf", "count": 1, "route": 1 },
+                { "interval": 0.1, "type": "Dwarf", "count": 1, "route": 2 },
+                
+            ]
+        },
+        {
+            "wave": 8,
+            "postDelay": 10.0,
+            "spawn":[
+            { "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+                { "interval": 0.1, "type": "Wizard", "count": 2, "route": 1 },
+                { "interval": 0.1, "type": "Wizard", "count": 2, "route": 2 },
+                
+
+                { "interval": 0.5, "type": "Marksman", "count": 3, "route": 0 },
+                { "interval": 1.0, "type": "Knight", "count": 8, "route": 0 },
+                { "interval": 0.5, "type": "Marksman", "count": 3, "route": 0 },
+                { "interval": 0.5, "type": "Adventurer", "count": 60, "route": 0 },
+                { "interval": 0.5, "type": "Marksman", "count": 3, "route": 0 },
+                { "interval": 0.3, "type": "Warrior", "count": 35, "route": 0 },
+                { "interval": 0.3, "type": "Warrior_Veteran", "count": 15, "route": 0 },
+                { "interval": 0.5, "type": "Marksman", "count": 3, "route": 0 }, 
+            ]
+        },
+        {
+            "wave": 9,
+            "postDelay": 10.0,
+            "spawn":[
+
+                { "interval": 0.5, "types": [ "Marksman", "Warrior", "Warrior", "Priest", "Warrior_Veteran" ], 
+                "typeInterval": 0.3, "count": 10, "route": 0 },
+
+{ "interval": 0.5, "types": [ "Horseman", "Marksman", "Warrior", "Warrior", "Knight", "Priest", "Priest", "Warrior_Veteran" ], 
+  "typeInterval": 0.3, "count": 10, "route": 0 },
+
+{ "interval": 0.3, "types": [ "Warrior", "Warrior", "Priest" ], 
+  "typeInterval": 0.2, "count": 20, "routes": [1, 2] },
+
+               
+                
+            ]
+        },
+        {
+            "wave": 10,
+            "postDelay": 10.0,
+            "spawn":[
+{ "interval": 0.1, "type": "Dwarf", "count": 1, "routes": [0, 1, 2] },
+{ "interval": 0.5, "types": [ "Warrior_Veteran", "Priest" ], 
+  "typeInterval": 0.6, "count": 20, "routes": [0, 1, 2] },
+
+{ "interval": 0.2, "types": [ "Adventurer", "Adventurer", "Thief" ], 
+  "typeInterval": 0.2, "count": 20, "routes": [1, 2] },
+
+{ "interval": 0.5, "types": [ "Horseman" ], 
+  "typeInterval": 0.5, "count": 3, "routes": [0, 1, 2] },
+
+{ "interval": 0.5, "types": [ "Knight", "Priest" ], 
+  "typeInterval": 0.5, "count": 20, "routes": [0] },
+
+{ "interval": 0.5, "types": [ "HeavyArmor", "Priest" ], 
+  "typeInterval": 0.5, "count": 20, "routes": [0] },
+                
+            ]
+        },
+        {
+            "wave": 11,
+            "postDelay": 10.0,
+            "spawn":[
+
+                { "interval": 1.5, "type": "Dwarf", "count": 2, "routes": [0, 1, 2] },
+
+{ "interval": 0.5, "types": [ "Warrior_Veteran", "Warrior_Veteran", "Warrior_Veteran", "Priest" ], 
+  "typeInterval": 0.2, "count": 10, "routes": [0] },
+
+{ "interval": 0.5, "types": [ "Journeyman" ], 
+  "typeInterval": 0.5, "count": 30, "routes": [0] },
+
+                
+                { "interval": 2.0, "type": "Knight", "count": 5, "route": 0 },
+                { "interval": 1.5, "type": "Dwarf", "count": 2, "route": 0 },
+                
+                { "interval": 0.5, "type": "Warrior_Veteran", "count": 10, "route": 0 },
+                { "interval": 0.5, "type": "Priest", "count": 5, "route": 0 },
+
+                
+            ]
+        },
+        {
+            "wave": 12,
+            "postDelay": 10.0,
+            "spawn":[
+                { "interval": 1.5, "type": "Dwarf", "count": 5, "routes": [0, 1, 2] },
+{ "interval": 0.2, "types": [ "Horseman" ], 
+  "typeInterval": 0.2, "count": 3, "routes": [0, 1, 2] },
+{ "interval": 0.5, "types": [ "Adventurer", "Adventurer", "Journeyman" ], 
+  "typeInterval": 0.2, "count": 40, "routes": [0] },
+
+{ "interval": 1.5, "type": "Dwarf", "count": 5, "routes": [0, 1, 2] },
+{ "interval": 0.2, "types": [ "Thief" ], 
+  "typeInterval": 0.2, "count": 50, "routes": [0, 1, 2] },
+
+            ]
+        }
+	]
+}

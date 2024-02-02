@@ -1,0 +1,354 @@
+{
+	"waveCount": 10,
+	"waves":[
+        {
+            "wave": 1,
+            "postDelay": 15.0,
+            "spawn": [
+                
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                
+                
+            ]
+        },
+		{
+            "wave": 2,
+            "postDelay": 25.0,
+			"spawn":[
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 8, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 8, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 8, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                
+			]
+		},
+        {
+            "wave": 3,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 4,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                               
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 5,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Thief", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                               
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 6,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Knight", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Priest", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Knight", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Priest", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Knight", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Priest", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Knight", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Priest", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Knight", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Priest", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                               
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 7,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                               
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 8,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Dwarf", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                               
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 9,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                               
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Horseman", "count": 1, "route": 0 },
+                
+                
+            ]
+        },
+        {
+            "wave": 10,
+            "postDelay": 25.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Thief", "count": 20, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Horseman", "count": 2, "route": 0 },
+
+                
+            ]
+        }
+	]
+}

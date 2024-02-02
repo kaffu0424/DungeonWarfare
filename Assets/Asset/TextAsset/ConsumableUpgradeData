@@ -1,0 +1,50 @@
+{
+    "Snare": {
+        "icon": "BuildButton_consumable_snare",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    },
+    "Bomb": {
+        "icon": "BuildButton_consumable_bomb",
+        "values": {
+            "damageBonusPerLevel": 0.03
+        }
+    },
+    "Repair": {
+        "icon": "BuildButton_consumable_repair",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    },
+    "Fear": {
+        "icon": "BuildButton_consumable_fear",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    },
+    "Firebat": {
+        "icon": "BuildButton_consumable_firebat",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    },
+    "Boost": {
+        "icon": "BuildButton_consumable_boost",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    },
+    "Frost": {
+        "icon": "BuildButton_consumable_frost",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    },
+    "Midas": {
+        "icon": "BuildButton_consumable_midas",
+        "values": {
+            "cooldownBonusPerLevel": 0.01
+        }
+    }
+}

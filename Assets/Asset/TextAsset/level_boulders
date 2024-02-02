@@ -1,0 +1,62 @@
+{
+    "title": "Boulder Cavern",
+    "startGold": 2000,
+    "tileset": "mines",
+    "route": [
+        [ "A", "9" ]
+    ],
+    "field": [
+        "11111111111111111111111",
+        "11111111111111111111111",
+        "11111111111211122211111",
+        "111151WWW15015220010A11",
+        "11000000000000000000A11",
+        "1111V111112222112010A11",
+        "11220111011155101211111",
+        "11220111000000>00111111",
+        "1222011101MM11101116111",
+        "12220111011111501116111",
+        "11210000051122500116111",
+        "11110115151666666666111",
+        "11110111122611101111111",
+        "11111111122611500511111",
+        "11111111112666110511111",
+        "11111113331216500111111",
+        "11111113930006000011111",
+        "11111113331216151111111",
+        "11111111111111111111111",
+        "11111111111111111111111"
+    ],
+    "decorations": [
+		{ "type": "Torch", "row": 15, "col": 3, "rotation": 0 },
+		{ "type": "Torch", "row": 15, "col": 3, "rotation": 180 },
+
+		{ "type": "Torch", "row": 8, "col": 4, "rotation": 90 },
+		{ "type": "Torch", "row": 8, "col": 4, "rotation": 270 },
+
+		{ "type": "Torch", "row": 7, "col": 15, "rotation": 90 },
+		{ "type": "Torch", "row": 7, "col": 15, "rotation": 270 },
+
+
+		{ "type": "Torch", "row": 3, "col": 10, "rotation": 0 },
+		{ "type": "Torch", "row": 3, "col": 10, "rotation": 180 },
+
+		{ "type": "Torch", "row": 14, "col": 19, "rotation": 180 },
+		{ "type": "Torch", "row": 16, "col": 19, "rotation": 0 },
+
+		{ "type": "Torch", "row": 15, "col": 18, "rotation": 180 },
+		{ "type": "Torch", "row": 15, "col": 18, "rotation": 0 },
+
+
+        { "type": "Boulder", "row": 15, "col": 2, "rotation": 270 },
+        { "type": "Boulder", "row": 7, "col": 4, "rotation": 180 },
+        { "type": "Boulder", "row": 13, "col": 8, "rotation": 0 },
+        { "type": "Boulder", "row": 13, "col": 15, "rotation": 0 },
+        { "type": "Boulder", "row": 12, "col": 16, "rotation": 90 },
+        { "type": "Boulder", "row": 3, "col": 17, "rotation": 90 }
+    ],
+    "rails": [
+        {"startRow": 1, "startCol": 13, "endRow": 12, "endCol": 19, "interval": 4 },
+        
+    ]
+}

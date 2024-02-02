@@ -1,0 +1,170 @@
+	{
+        "Spike": {
+            "icon": "BuildButton_Spike",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.008
+            }
+        },
+        "Push": {
+            "icon": "BuildButton_Push",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.01
+            }
+        },
+        "Barricade": {
+            "icon": "BuildButton_Barricade",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Spin": {
+            "icon": "BuildButton_Spin",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "damageBonusPerLevel": 0.05
+            }
+        },
+        "Harpoon": {
+            "icon": "BuildButton_Harpoon",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.015
+            }
+        },
+        "Wind": {
+            "icon": "BuildButton_Wind",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Grind": {
+            "icon": "BuildButton_Grinder",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Bolt": {
+            "icon": "BuildButton_Bolt",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "damageBonusPerLevel": 0.025
+            }
+        },
+        "Blade": {
+            "icon": "BuildButton_Blade",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "damageBonusPerLevel": 0.015
+            }
+        },
+        "Lightning": {
+            "icon": "BuildButton_Lightning",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "damageBonusPerLevel": 0.015
+            }
+        },
+        "Dart": {
+            "icon": "BuildButton_Dart",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.009
+            }
+        },
+        "Inferno": {
+            "icon": "BuildButton_Inferno",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.01
+            }
+        },
+        "Spring": {
+            "icon": "BuildButton_Spring",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.01
+            }
+        },
+        "Tar": {
+            "icon": "BuildButton_Tar",
+            "priceBase": 1,
+            "priceMultiplier": 1.25,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Slot": {
+            "icon": "BuildButton_Slot",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Spawner_Demon": {
+            "icon": "BuildButton_consumable_fear",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.01
+            }
+        },
+        "Circuit": {
+            "icon": "BuildButton_Circuit",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 0.01
+            }
+        },
+        "Spawner_Necromancer": {
+            "icon": "BuildButton_Necromancer",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "cooldownBonusPerLevel": 0.01
+            }
+        },
+        "Harvester": {
+            "icon": "BuildButton_Harvester",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Blackhole": {
+            "icon": "BuildButton_Blackhole",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        },
+        "Hex": {
+            "icon": "BuildButton_Hex",
+            "priceBase": 1,
+            "priceMultiplier": 1.5,
+            "values": {
+                "goldBonusPerLevel": 5
+            }
+        }
+}

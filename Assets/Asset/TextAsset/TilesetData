@@ -1,0 +1,667 @@
+{
+    "stone": {
+        "floor": [
+            { "name": "floor_stone_1", "rotationEnabled": true },
+            { "name": "floor_stone_2", "rotationEnabled": true },
+            { "name": "floor_stone_3", "rotationEnabled": true },
+            { "name": "floor_stone_4", "rotationEnabled": true },
+            { "name": "floor_stone_5", "rotationEnabled": true },
+            { "name": "floor_stone_6", "rotationEnabled": true },
+            { "name": "floor_stone_7", "rotationEnabled": true },
+            { "name": "floor_stone_8", "rotationEnabled": true },
+            { "name": "floor_stone_9", "rotationEnabled": true },
+            { "name": "floor_stone_10", "rotationEnabled": true },
+            { "name": "floor_stone_11", "rotationEnabled": true },
+            { "name": "floor_stone_12", "rotationEnabled": true }
+        ],
+        "gate": {
+            "1": [
+                "gate_stone_1"
+            ],
+            "2": [
+                "gate_stone_2"
+            ],
+            "3": [
+                "gate_stone_3"
+            ]
+        },
+        "entrance": {
+            "1": [
+                "floor_stone_entrance_1"
+            ],
+            "2": [
+                "floor_stone_entrance_2"
+            ],
+            "3": [
+                "floor_stone_entrance_3"
+            ]
+        },
+        "wall": {
+            "fill": [
+                "wall_stone_fill_1",
+                "wall_stone_fill_2"
+            ],
+            "corner": [
+                "wall_stone_corner"
+            ],
+            "1": [
+                "wall_stone_1_1",
+                "wall_stone_1_2",
+                "wall_stone_1_3"
+            ],
+            "2_corner": [
+                "wall_stone_2_corner_1",
+                "wall_stone_2_corner_2"
+            ],
+            "2_wall": [
+                "wall_stone_2_wall_1",
+                "wall_stone_2_wall_2"
+            ],
+            "3": [
+                "wall_stone_3_1",
+                "wall_stone_3_2"
+            ],
+            "4": [
+                "wall_stone_4"
+            ]
+        },
+        "abyss": {
+            "fill": [
+                "abyss_fill"
+            ],
+            "corner": [
+                "abyss_edge_stone_connection"
+            ],
+            "edge": [
+                "abyss_edge_stone_1",
+                "abyss_edge_stone_2",
+                "abyss_edge_stone_3",
+                "abyss_edge_stone_4"
+            ]
+        },
+        "obstacle": [
+            "obstacle_stone_1",
+            "obstacle_stone_2",
+            "obstacle_stone_3",
+            "obstacle_stone_4",
+            "obstacle_stone_5",
+            "obstacle_stone_6"
+        ],
+        "rail": {
+            "curve": [
+                "minecart_track_curve"
+            ],
+            "straight": [
+                "minecart_track_straight"
+            ],
+            "enterstation": [
+                "minecart_station_enter"
+            ],
+            "exitstation": [
+                "minecart_station_exit"
+            ]
+        },
+        "spikedwall": {
+            "1": [
+                "spiked_wall_0"
+            ]
+        },
+        "fluid": {
+            "basetexture": "fluid_water",
+            "overlaytexture": "fluid_water_overlay",
+            "isluminous": "false",
+            "splasheffect": "Splash_Water"
+        }
+    },
+    "mines": {
+        "floor": [
+            { "name": "floor_mines_1", "rotationEnabled": true },
+            { "name": "floor_mines_2", "rotationEnabled": true },
+            { "name": "floor_mines_3", "rotationEnabled": true },
+            { "name": "floor_mines_4", "rotationEnabled": true },
+            { "name": "floor_mines_5", "rotationEnabled": true },
+            { "name": "floor_mines_6", "rotationEnabled": true },
+            { "name": "floor_mines_7", "rotationEnabled": true },
+            { "name": "floor_mines_8", "rotationEnabled": true },
+            { "name": "floor_mines_9", "rotationEnabled": true },
+            { "name": "floor_mines_10", "rotationEnabled": true },
+            { "name": "floor_mines_11", "rotationEnabled": true },
+            { "name": "floor_mines_12", "rotationEnabled": true }
+        ],
+        "gate": {
+            "1": [
+                "gate_mines_1"
+            ],
+            "2": [
+                "gate_mines_2"
+            ],
+            "3": [
+                "gate_mines_3"
+            ]
+        },
+        "entrance": {
+            "1": [
+                "floor_mines_entrance_1"
+            ],
+            "2": [
+                "floor_mines_entrance_2"
+            ],
+            "3": [
+                "floor_mines_entrance_3"
+            ]
+        },
+        "wall": {
+            "fill": [
+                "wall_mines_fill_1",
+                "wall_mines_fill_2"
+            ],
+            "corner": [
+                "wall_mines_corner"
+            ],
+            "1": [
+                "wall_mines_1_1",
+                "wall_mines_1_2",
+                "wall_mines_1_3"
+            ],
+            "2_corner": [
+                "wall_mines_2_corner_1",
+                "wall_mines_2_corner_2"
+            ],
+            "2_wall": [
+                "wall_mines_2_wall_1",
+                "wall_mines_2_wall_2"
+            ],
+            "3": [
+                "wall_mines_3_1",
+                "wall_mines_3_2"
+            ],
+            "4": [
+                "wall_mines_4"
+            ]
+        },
+        "abyss": {
+            "fill": [
+                "abyss_fill"
+            ],
+            "corner": [
+                "abyss_edge_mines_connection"
+            ],
+            "edge": [
+                "abyss_edge_mines_1",
+                "abyss_edge_mines_2",
+                "abyss_edge_mines_3",
+                "abyss_edge_mines_4"
+            ]
+        },
+        "obstacle": [
+            "obstacle_mines_1",
+            "obstacle_mines_2",
+            "obstacle_mines_3",
+            "obstacle_mines_4",
+            "obstacle_mines_5",
+            "obstacle_mines_6"
+        ],
+        "rail": { 
+            "curve": [
+                "minecart_track_curve"
+            ],
+            "straight": [
+                "minecart_track_straight"
+            ],
+            "enterstation": [
+                "minecart_station_enter"
+            ],
+            "exitstation": [ 
+                "minecart_station_exit"
+            ]
+        },
+        "spikedwall": {
+            "1": [
+                "spiked_wall_0"
+            ]
+        },
+        "fluid": {
+            "basetexture": "",
+            "overlaytexture": "",
+            "isluminous": "false",
+            "splasheffect": ""
+        }
+    },
+    "dungeon": {
+        "floor": [
+            { "name": "floor_dungeon_1", "rotationEnabled": false },
+            { "name": "floor_dungeon_2", "rotationEnabled": false },
+            { "name": "floor_dungeon_3", "rotationEnabled": false },
+            { "name": "floor_dungeon_4", "rotationEnabled": false },
+            { "name": "floor_dungeon_5", "rotationEnabled": false },
+            { "name": "floor_dungeon_6", "rotationEnabled": false },
+            { "name": "floor_dungeon_7", "rotationEnabled": false },
+            { "name": "floor_dungeon_8", "rotationEnabled": false },
+            { "name": "floor_dungeon_9", "rotationEnabled": false },
+            { "name": "floor_dungeon_10", "rotationEnabled": false },
+            { "name": "floor_dungeon_11", "rotationEnabled": false },
+            { "name": "floor_dungeon_12", "rotationEnabled": false }
+        ],
+        "gate": {
+            "1": [
+                "gate_dungeon_1"
+            ],
+            "2": [
+                "gate_dungeon_2"
+            ],
+            "3": [
+                "gate_dungeon_3"
+            ]
+        },
+        "entrance": {
+            "1": [
+                "floor_dungeon_entrance_1"
+            ],
+            "2": [
+                "floor_dungeon_entrance_2"
+            ],
+            "3": [
+                "floor_dungeon_entrance_3"
+            ]
+        },
+        "wall": {
+            "fill": [
+                "wall_dungeon_fill_1",
+                "wall_dungeon_fill_2"
+            ],
+            "corner": [
+                "wall_dungeon_corner"
+            ],
+            "1": [
+                "wall_dungeon_1_1",
+                "wall_dungeon_1_2",
+                "wall_dungeon_1_3"
+            ],
+            "2_corner": [
+                "wall_dungeon_2_corner_1",
+                "wall_dungeon_2_corner_2"
+            ],
+            "2_wall": [
+                "wall_dungeon_2_wall_1",
+                "wall_dungeon_2_wall_2"
+            ],
+            "3": [
+                "wall_dungeon_3_1",
+                "wall_dungeon_3_2"
+            ],
+            "4": [
+                "wall_dungeon_4"
+            ]
+        },
+        "abyss": {
+            "fill": [
+                "abyss_fill_dungeon"
+            ],
+            "corner": [
+            ],
+            "edge": [
+                "abyss_edge_dungeon_1",
+                "abyss_edge_dungeon_2",
+                "abyss_edge_dungeon_3",
+                "abyss_edge_dungeon_4"
+            ]
+        },
+        "obstacle": [
+            "obstacle_dungeon_1",
+            "obstacle_dungeon_2",
+            "obstacle_dungeon_3",
+            "obstacle_dungeon_4",
+            "obstacle_dungeon_5",
+            "obstacle_dungeon_6"
+        ],
+        "rail": { 
+            "curve": [
+                "minecart_track_curve"
+            ],
+            "straight": [
+                "minecart_track_straight"
+            ],
+            "enterstation": [
+                "minecart_station_enter"
+            ],
+            "exitstation": [ 
+                "minecart_station_exit"
+            ]
+        },
+        "spikedwall": {
+            "1": [
+                "spiked_wall_0"
+            ]
+        },
+        "fluid": {
+            "basetexture": "fluid_green",
+            "overlaytexture": "fluid_green_overlay",
+            "isluminous": "false",
+            "splasheffect": "Splash_Liquid"
+        }
+    },
+    "prison": {
+        "floor": [
+            { "name": "floor_prison_1", "rotationEnabled": false },
+            { "name": "floor_prison_2", "rotationEnabled": false },
+            { "name": "floor_prison_3", "rotationEnabled": false },
+            { "name": "floor_prison_4", "rotationEnabled": false },
+            { "name": "floor_prison_5", "rotationEnabled": false },
+            { "name": "floor_prison_6", "rotationEnabled": false },
+            { "name": "floor_prison_7", "rotationEnabled": false },
+            { "name": "floor_prison_8", "rotationEnabled": false },
+            { "name": "floor_prison_9", "rotationEnabled": false },
+            { "name": "floor_prison_10", "rotationEnabled": false },
+            { "name": "floor_prison_11", "rotationEnabled": false },
+            { "name": "floor_prison_12", "rotationEnabled": false }
+        ],
+        "gate": {
+            "1": [
+                "gate_prison_1"
+            ],
+            "2": [
+                "gate_prison_2"
+            ],
+            "3": [
+                "gate_prison_3"
+            ]
+        },
+        "entrance": {
+            "1": [
+                "floor_prison_entrance_1"
+            ],
+            "2": [
+                "floor_prison_entrance_2"
+            ],
+            "3": [
+                "floor_prison_entrance_3"
+            ]
+        },
+        "wall": {
+            "fill": [
+                "wall_prison_fill_1",
+                "wall_prison_fill_2"
+            ],
+            "corner": [
+                "wall_prison_corner"
+            ],
+            "1": [
+                "wall_prison_1_1",
+                "wall_prison_1_2",
+                "wall_prison_1_3"
+            ],
+            "2_corner": [
+                "wall_prison_2_corner_1"
+            ],
+            "2_wall": [
+                "wall_prison_2_wall_1"
+            ],
+            "3": [
+                "wall_prison_3_1",
+                "wall_prison_3_2"
+            ],
+            "4": [
+                "wall_prison_4"
+            ]
+        },
+        "abyss": {
+            "fill": [
+                "abyss_fill"
+            ],
+            "corner": [
+            ],
+            "edge": [
+                "abyss_edge_prison_1",
+                "abyss_edge_prison_2",
+                "abyss_edge_prison_3",
+                "abyss_edge_prison_4"
+            ]
+        },
+        "obstacle": [
+            "obstacle_prison_1",
+            "obstacle_prison_2",
+            "obstacle_prison_3",
+            "obstacle_prison_4",
+            "obstacle_prison_5",
+            "obstacle_prison_6"
+        ],
+        "rail": { 
+            "curve": [
+                "minecart_track_curve"
+            ],
+            "straight": [
+                "minecart_track_straight"
+            ],
+            "enterstation": [
+                "minecart_station_enter"
+            ],
+            "exitstation": [ 
+                "minecart_station_exit"
+            ]
+        },
+        "spikedwall": {
+            "1": [
+                "spiked_wall_0"
+            ]
+        },
+        "fluid": {
+            "basetexture": "fluid_lava",
+            "overlaytexture": "fluid_lava_overlay",
+            "isluminous": "true",
+            "splasheffect": "Splash_Liquid"
+        }
+    },
+    "ash": {
+        "floor": [
+            { "name": "floor_ash_1", "rotationEnabled": true },
+            { "name": "floor_ash_2", "rotationEnabled": true },
+            { "name": "floor_ash_3", "rotationEnabled": true },
+            { "name": "floor_ash_4", "rotationEnabled": true },
+            { "name": "floor_ash_5", "rotationEnabled": true },
+            { "name": "floor_ash_6", "rotationEnabled": true },
+            { "name": "floor_ash_7", "rotationEnabled": true },
+
+        ],
+        "gate": {
+            "1": [
+                "gate_ash_1"
+            ],
+            "2": [
+                "gate_ash_2"
+            ],
+            "3": [
+                "gate_ash_3"
+            ]
+        },
+        "entrance": {
+            "1": [
+                "floor_ash_entrance_1"
+            ],
+            "2": [
+                "floor_ash_entrance_2"
+            ],
+            "3": [
+                "floor_ash_entrance_3"
+            ]
+        },
+        "wall": {
+            "fill": [
+                "wall_ash_fill_1"
+            ],
+            "corner": [
+                "wall_ash_corner"
+            ],
+            "1": [
+                "wall_ash_1_1",
+                "wall_ash_1_2",
+                "wall_ash_1_3"
+            ],
+            "2_corner": [
+                "wall_ash_2_corner_1"
+            ],
+            "2_wall": [
+                "wall_ash_2_wall_1"
+            ],
+            "3": [
+                "wall_ash_3_1"
+            ],
+            "4": [
+                "wall_ash_4"
+            ]
+        },
+        "abyss": {
+            "fill": [
+                "abyss_fill"
+            ],
+            "corner": [
+                "abyss_edge_stone_connection"
+            ],
+            "edge": [
+                "abyss_edge_ash_1"
+            ]
+        },
+        "obstacle": [
+            "obstacle_ash_1",
+            "obstacle_ash_2",
+            "obstacle_ash_3",
+            "obstacle_ash_4",
+            "obstacle_ash_5",
+            "obstacle_ash_6"
+        ],
+        "rail": { 
+            "curve": [
+                "minecart_track_curve"
+            ],
+            "straight": [
+                "minecart_track_straight"
+            ],
+            "enterstation": [
+                "minecart_station_enter"
+            ],
+            "exitstation": [ 
+                "minecart_station_exit"
+            ]
+        },
+        "spikedwall": {
+            "1": [
+                "spiked_wall_0"
+            ]
+        },
+        "fluid": {
+            "basetexture": "fluid_lava",
+            "overlaytexture": "fluid_lava_overlay",
+            "isluminous": "true",
+            "splasheffect": "Splash_Liquid"
+        }
+    },
+    "ice": {
+        "floor": [
+            { "name": "floor_ice_1", "rotationEnabled": true },
+            { "name": "floor_ice_2", "rotationEnabled": true },
+            { "name": "floor_ice_3", "rotationEnabled": true },
+            { "name": "floor_ice_4", "rotationEnabled": true },
+            { "name": "floor_ice_5", "rotationEnabled": true },
+            { "name": "floor_ice_6", "rotationEnabled": true },
+            { "name": "floor_ice_7", "rotationEnabled": true },
+            { "name": "floor_ice_8", "rotationEnabled": true },
+            { "name": "floor_ice_9", "rotationEnabled": true },
+            { "name": "floor_ice_10", "rotationEnabled": true },
+            { "name": "floor_ice_11", "rotationEnabled": true },
+            { "name": "floor_ice_12", "rotationEnabled": true },
+
+        ],
+        "gate": {
+            "1": [
+                "gate_ice_1"
+            ],
+            "2": [
+                "gate_ice_2"
+            ],
+            "3": [
+                "gate_ice_3"
+            ]
+        },
+        "entrance": {
+            "1": [
+                "floor_ice_entrance_1"
+            ],
+            "2": [
+                "floor_ice_entrance_2"
+            ],
+            "3": [
+                "floor_ice_entrance_3"
+            ]
+        },
+        "wall": {
+            "fill": [
+                "wall_ice_fill"
+            ],
+            "corner": [
+                "wall_ice_corner"
+            ],
+            "1": [
+                "wall_ice_1_1",
+                "wall_ice_1_2",
+                "wall_ice_1_3"
+            ],
+            "2_corner": [
+                "wall_ice_2_corner_1"
+            ],
+            "2_wall": [
+                "wall_ice_2_wall_1"
+            ],
+            "3": [
+                "wall_ice_3_1"
+            ],
+            "4": [
+                "wall_ice_4"
+            ]
+        },
+        "abyss": {
+            "fill": [
+                "abyss_fill"
+            ],
+            "corner": [
+                "abyss_edge_ice_connection"
+            ],
+            "edge": [
+                "abyss_edge_ice_1",
+                "abyss_edge_ice_2",
+                "abyss_edge_ice_3"
+            ]
+        },
+        "obstacle": [
+            "obstacle_stone_1",
+            "obstacle_stone_2",
+            "obstacle_stone_3",
+            "obstacle_stone_4",
+            "obstacle_stone_5",
+            "obstacle_stone_6"
+        ],
+        "rail": { 
+            "curve": [
+                "minecart_track_curve"
+            ],
+            "straight": [
+                "minecart_track_straight"
+            ],
+            "enterstation": [
+                "minecart_station_enter"
+            ],
+            "exitstation": [ 
+                "minecart_station_exit"
+            ]
+        },
+        "spikedwall": {
+            "1": [
+                "spiked_wall_0"
+            ]
+        },
+        "fluid": {
+            "basetexture": "fluid_water",
+            "overlaytexture": "fluid_water_overlay",
+            "isluminous": "false",
+            "splasheffect": "Splash_Liquid"
+        }
+    }
+}

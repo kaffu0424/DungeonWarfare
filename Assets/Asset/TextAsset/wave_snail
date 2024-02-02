@@ -1,0 +1,216 @@
+{
+	"waveCount": 8,
+	"waves":[
+		{
+            "wave": 1,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":0, "route": 0},
+				{"timeOffset":4.0, "type":0, "route": 0},
+				
+				{"timeOffset":8.0, "type":0, "route": 0},
+				{"timeOffset":10.0, "type":0, "route": 0},
+				{"timeOffset":14.0, "type":1, "route": 0}
+
+
+			]
+		},
+		{
+            "wave": 2,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":0, "route": 0},
+				{"timeOffset":3.0, "type":0, "route": 0},
+				{"timeOffset":8.0, "type":0, "route": 0},
+				{"timeOffset":9.0, "type":0, "route": 0},
+
+				{"timeOffset":11.0, "type":0, "route": 0},
+				{"timeOffset":12.0, "type":0, "route": 0},
+				{"timeOffset":15.0, "type":0, "route": 0},
+				{"timeOffset":17.0, "type":1, "route": 0}
+
+			]
+		},
+		{
+            "wave": 3,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":0, "route": 0},
+				{"timeOffset":3.0, "type":0, "route": 0},
+				{"timeOffset":8.0, "type":0, "route": 0},
+				{"timeOffset":9.0, "type":0, "route": 0},
+				{"timeOffset":14.0, "type":0, "route": 0},
+				{"timeOffset":15.0, "type":0, "route": 0}
+			]
+		},
+		{
+            "wave": 4,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":0, "route": 0},
+				{"timeOffset":3.0, "type":0, "route": 0},
+				{"timeOffset":4.0, "type":0, "route": 0},
+				{"timeOffset":9.0, "type":0, "route": 0},
+				{"timeOffset":10.0, "type":0, "route": 0},
+				{"timeOffset":11.0, "type":0, "route": 0},				
+				{"timeOffset":14.0, "type":0, "route": 0},
+				{"timeOffset":15.0, "type":0, "route": 0},
+				{"timeOffset":16.0, "type":0, "route": 0},
+				{"timeOffset":19.0, "type":1, "route": 0}
+				
+			]
+		},
+		{
+            "wave": 5,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":0, "route": 0},
+				{"timeOffset":3.0, "type":0, "route": 0},
+				{"timeOffset":4.0, "type":1, "route": 0},
+				{"timeOffset":9.0, "type":0, "route": 0},
+				{"timeOffset":10.0, "type":0, "route": 0},
+				{"timeOffset":11.0, "type":1, "route": 0},				
+				{"timeOffset":14.0, "type":0, "route": 0},
+				{"timeOffset":15.0, "type":0, "route": 0},
+				{"timeOffset":16.0, "type":1, "route": 0},
+				{"timeOffset":17.0, "type":0, "route": 0},
+				{"timeOffset":19.0, "type":1, "route": 0},
+				{"timeOffset":20.0, "type":0, "route": 0}
+
+			]
+		},
+		{
+            "wave": 6,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":1, "route": 0},
+				{"timeOffset":3.0, "type":1, "route": 0},
+				{"timeOffset":4.0, "type":1, "route": 0},
+				{"timeOffset":9.0, "type":1, "route": 0},
+				{"timeOffset":10.0, "type":1, "route": 0},
+				{"timeOffset":11.0, "type":1, "route": 0},				
+				{"timeOffset":14.0, "type":1, "route": 0},
+				{"timeOffset":15.0, "type":1, "route": 0},
+				{"timeOffset":16.0, "type":1, "route": 0},
+				{"timeOffset":17.0, "type":1, "route": 0},
+				{"timeOffset":19.0, "type":1, "route": 0},
+				{"timeOffset":20.0, "type":1, "route": 0},
+				
+				{"timeOffset":22.0, "type":0, "route": 0},
+				{"timeOffset":23.0, "type":1, "route": 0},
+				{"timeOffset":24.0, "type":2, "route": 0},
+				{"timeOffset":29.0, "type":0, "route": 0},
+				{"timeOffset":30.0, "type":1, "route": 0},
+				{"timeOffset":31.0, "type":2, "route": 0},				
+				{"timeOffset":34.0, "type":0, "route": 0},
+				{"timeOffset":35.0, "type":1, "route": 0},
+				{"timeOffset":36.0, "type":2, "route": 0},
+				{"timeOffset":37.0, "type":0, "route": 0},
+				{"timeOffset":39.0, "type":1, "route": 0},
+				{"timeOffset":40.0, "type":2, "route": 0}
+
+			]
+		},
+		{
+            "wave": 7,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":1, "route": 0},
+				{"timeOffset":3.0, "type":1, "route": 0},
+				{"timeOffset":4.0, "type":1, "route": 0},
+				{"timeOffset":9.0, "type":1, "route": 0},
+				{"timeOffset":10.0, "type":1, "route": 0},
+				{"timeOffset":11.0, "type":1, "route": 0},				
+				{"timeOffset":14.0, "type":1, "route": 0},
+				{"timeOffset":15.0, "type":1, "route": 0},
+				{"timeOffset":16.0, "type":1, "route": 0},
+				{"timeOffset":17.0, "type":1, "route": 0},
+				{"timeOffset":19.0, "type":1, "route": 0},
+				{"timeOffset":20.0, "type":1, "route": 0},
+				
+				{"timeOffset":22.0, "type":0, "route": 0},
+				{"timeOffset":23.0, "type":1, "route": 0},
+				{"timeOffset":24.0, "type":2, "route": 0},
+				{"timeOffset":29.0, "type":0, "route": 0},
+				{"timeOffset":30.0, "type":1, "route": 0},
+				{"timeOffset":31.0, "type":2, "route": 0},				
+				{"timeOffset":34.0, "type":0, "route": 0},
+				{"timeOffset":35.0, "type":1, "route": 0},
+				{"timeOffset":36.0, "type":2, "route": 0},
+				{"timeOffset":37.0, "type":0, "route": 0},
+				{"timeOffset":39.0, "type":1, "route": 0},
+				{"timeOffset":40.0, "type":2, "route": 0}
+
+			]
+		},
+		{
+            "wave": 8,
+            "postDelay": 20.0,
+			"spawn":[
+				{"timeOffset":2.0, "type":2, "route": 0},
+				{"timeOffset":3.0, "type":2, "route": 0},
+				{"timeOffset":4.0, "type":3, "route": 0},
+				{"timeOffset":9.0, "type":2, "route": 0},
+				{"timeOffset":10.0, "type":2, "route": 0},
+				{"timeOffset":11.0, "type":3, "route": 0},				
+				{"timeOffset":14.0, "type":2, "route": 0},
+				{"timeOffset":15.0, "type":2, "route": 0},
+				{"timeOffset":16.0, "type":3, "route": 0},
+				{"timeOffset":17.0, "type":2, "route": 0},
+				{"timeOffset":19.0, "type":2, "route": 0},
+				{"timeOffset":20.0, "type":3, "route": 0},
+				
+				{"timeOffset":22.0, "type":4, "route": 0},
+				{"timeOffset":23.0, "type":1, "route": 0},
+				{"timeOffset":24.0, "type":2, "route": 0},
+				{"timeOffset":29.0, "type":4, "route": 0},
+				{"timeOffset":30.0, "type":1, "route": 0},
+				{"timeOffset":31.0, "type":2, "route": 0},				
+				{"timeOffset":34.0, "type":4, "route": 0},
+				{"timeOffset":35.0, "type":1, "route": 0},
+				{"timeOffset":36.0, "type":2, "route": 0},
+				{"timeOffset":37.0, "type":4, "route": 0},
+				{"timeOffset":39.0, "type":1, "route": 0},
+				{"timeOffset":40.0, "type":2, "route": 0},
+
+				{"timeOffset":42.0, "type":1, "route": 0},
+				{"timeOffset":43.0, "type":1, "route": 0},
+				{"timeOffset":44.0, "type":1, "route": 0},
+				{"timeOffset":45.0, "type":1, "route": 0},
+				{"timeOffset":46.0, "type":1, "route": 0},
+				{"timeOffset":47.0, "type":1, "route": 0},				
+				{"timeOffset":48.0, "type":1, "route": 0},
+				{"timeOffset":49.0, "type":1, "route": 0},
+				{"timeOffset":50.0, "type":1, "route": 0},
+				{"timeOffset":51.0, "type":1, "route": 0},
+				{"timeOffset":52.0, "type":1, "route": 0},
+				{"timeOffset":53.0, "type":1, "route": 0}
+
+			]
+		},
+		{
+            "wave": 9,
+            "postDelay": 20.0,
+			"spawn":[
+				
+			]
+		},
+		{
+            "wave": 10,
+            "postDelay": 20.0,
+			"spawn":[
+				
+			]
+		},
+		{
+            "wave": 11,
+            "postDelay": 20.0,
+			"spawn":[
+				
+			]
+		}
+
+
+
+	]
+}

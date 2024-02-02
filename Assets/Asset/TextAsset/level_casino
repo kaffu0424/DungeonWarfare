@@ -1,0 +1,62 @@
+{
+    "title": "Abandoned Casino",
+    "startGold": 1000,
+    "tileset": "mines",
+    "route": [
+        [ "A", "9" ],
+
+    ],
+    "field": [
+        "111111111111111111111111111111111111111111",
+        "111111111111111111111111111111111111111111",
+        "111111111111111111111111111111111111111111",
+        "111111111111111111111111111111111111111111",
+        "111111100066666666666666666666600011111111",
+        "111111102261122222222222222221622011111111",
+        "111111102261120000066600000001622011111111",
+        "111111100061126666660611111101600011111111",
+        "111111102261126011110666612101622011111111",
+        "11111110226123331A000011612101622011111111",
+        "11111666666003931A000011612101600011111111",
+        "111111102201233311110011000101622011111111",
+        "111111102202020100012211010101622011111111",
+        "111111100001020101012211010101600011111111",
+        "111111102202020101010000010101622011111111",
+        "111111102201020101012222210101622011111111",
+        "111111100002020101012222210101600011111111",
+        "111111102201010001000000000101622011111111",
+        "111111102202012121211111112101622011111111",
+        "111111100001000000000000000000666666111111",
+        "111111111111111111111111111111111111111111",
+        "111111111111111111111111111111111111111111",
+        "111111111111111111111111111111111111111111",
+        "111111111111111111111111111111111111111111",
+           
+    ],
+    "sacrificialPits": [ 
+        { "left": 31, "bottom": 5, "right": 32, "top": 6, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 31, "bottom": 8, "right": 32, "top": 9, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 31, "bottom": 11, "right": 32, "top": 12, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 31, "bottom": 14, "right": 32, "top": 15, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 31, "bottom": 17, "right": 32, "top": 18, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+
+        { "left": 8, "bottom": 5, "right": 9, "top": 6, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 8, "bottom": 8, "right": 9, "top": 9, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 8, "bottom": 11, "right": 9, "top": 12, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 8, "bottom": 14, "right": 9, "top": 15, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+        { "left": 8, "bottom": 17, "right": 9, "top": 18, "isRepeatable": true, "effectID": 2, "sacrificeCount": 5 },
+
+        
+    ],
+    "prebuiltTraps": [
+        { "row": 12, "col": 18, "type": "Slot", "tier": 0 },
+        { "row": 12, "col": 19, "type": "Slot", "tier": 0 },
+        { "row": 15, "col": 18, "type": "Slot", "tier": 0 },
+        { "row": 15, "col": 19, "type": "Slot", "tier": 0 },
+        
+    ],
+    "rails": [
+        {"startRow": 13, "startCol": 4, "endRow": 4, "endCol": 36, "interval": 4.5 },
+        
+    ]
+}

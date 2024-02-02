@@ -1,0 +1,98 @@
+{
+    "Breeze": {
+        "expMultiplier": "0.8",
+        "icon": "rune_breeze",
+        "unlockCondition":{
+            "stage": "Gateway",
+            "level": 0
+        }
+    },
+    "Blood": {
+        "expMultiplier": "1.35",
+        "icon": "rune_blood",
+        "unlockCondition":{
+            "stage": "FirstBlood",
+            "level": 0
+        }
+    },
+    "Scythe": {
+        "expMultiplier": "1.15",
+        "icon": "rune_scythe",
+        "unlockCondition":{
+            "stage": "Slit",
+            "level": 0
+        }
+    },
+    "Fort": {
+        "expMultiplier": "1.2",
+        "icon": "rune_fort",
+        "unlockCondition":{
+            "stage": "Tunnel",
+            "level": 0
+        }
+    },
+    "Anchor": {
+        "expMultiplier": "1.15",
+        "icon": "rune_anchor",
+        "unlockCondition":{
+            "stage": "Echo",
+            "level": 0
+        }
+    },
+    "Nil": {
+        "expMultiplier": "1.25",
+        "icon": "rune_nil",
+        "unlockCondition":{
+            "stage": "BoulderCavern",
+            "level": 0
+        }
+    },
+    "Frenzy": {
+        "expMultiplier": "1.15",
+        "icon": "rune_frenzy",
+        "unlockCondition":{
+            "stage": "Arena",
+            "level": 0
+        }
+    },
+    "Trinity": {
+        "expMultiplier": "1.45",
+        "icon": "rune_trinity",
+        "unlockCondition":{
+            "stage": "Haphazard",
+            "level": 0
+        }
+    },
+    "Vine": {
+        "expMultiplier": "1.3",
+        "icon": "rune_vine",
+        "unlockCondition":{
+            "stage": "Mines",
+            "level": 0
+        }
+    },
+    "Rust": {
+        "expMultiplier": "1.10",
+        "icon": "rune_rust",
+        "unlockCondition":{
+            "stage": "LostRoyals",
+            "level": 0
+        }
+    },
+    "Purity": {
+        "expMultiplier": "1.25",
+        "icon": "rune_purity",
+        "unlockCondition":{
+            "stage": "HeroesMustDie",
+            "level": 0
+        }
+    },
+    "Infinity": {
+        "expMultiplier": "1.1",
+        "icon": "rune_infinity",
+        "unlockCondition":{
+            "stage": "CrumbleZone",
+            "level": 0
+        }
+    }
+}

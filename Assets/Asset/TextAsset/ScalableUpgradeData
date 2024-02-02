@@ -1,0 +1,10 @@
+{
+    "LifeBonus": {
+        "icon": "BuildButton_extralife",
+        "intValue": 1
+    },
+    "GoldBonus": {
+        "icon": "BuildButton_Harvester",
+        "intValue": 25
+    }
+}

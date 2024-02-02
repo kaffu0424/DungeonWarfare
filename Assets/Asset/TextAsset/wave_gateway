@@ -1,0 +1,77 @@
+{
+	"waveCount": 7,
+	"waves":[
+        {
+            "wave": 1,
+            "postDelay": 20.0,
+            "spawn": [
+            { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "Peasant", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "King", "count": 10, "route": 0 }
+            ]
+        },
+		{
+            "wave": 2,
+            "postDelay": 30.0,
+			"spawn":[
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Peasant", "count": 40, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 10, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "King", "count": 10, "route": 0 }
+
+			]
+		},
+		{
+            "wave": 3,
+            "postDelay": 30.0,
+			"spawn":[
+                { "timeOffset": -1.0, "interval": 0.2, "type": "Peasant", "count": 50, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Adventurer", "count": 15, "route": 0 },
+                { "timeOffset": -1.0, "interval": 2.0, "type": "Warrior", "count": 10, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 5, "route": 0 }
+                   
+			]
+		},
+        {
+            "wave": 4,
+            "postDelay": 30.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.7, "type": "Peasant", "count": 10, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.8, "type": "Adventurer", "count": 25, "route": 0 },
+                { "timeOffset": -1.0, "interval": 1.5, "type": "Warrior", "count": 25, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 7, "route": 0 }
+                   
+            ]
+        },
+        {
+            "wave": 5,
+            "postDelay": 30.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.7, "type": "Adventurer", "count": 40, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 7, "route": 0 }
+            ]
+        },
+        {
+            "wave": 6,
+            "postDelay": 30.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 1.0, "type": "Warrior", "count": 40, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Adventurer", "count": 30, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "King", "count": 15, "route": 0 }
+                
+                
+            ]
+        },
+        {
+            "wave": 7,
+            "postDelay": 30.0,
+            "spawn":[
+                { "timeOffset": -1.0, "interval": 0.8, "type": "Warrior", "count": 35, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Adventurer", "count": 45, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.5, "type": "Warrior_Veteran", "count": 5, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.4, "type": "Warrior", "count": 30, "route": 0 },
+                { "timeOffset": -1.0, "interval": 0.8, "type": "Knight", "count": 10, "route": 0 },
+
+            ]
+        }
+	]
+}

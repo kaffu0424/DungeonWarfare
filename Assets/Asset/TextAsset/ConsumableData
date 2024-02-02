@@ -1,0 +1,98 @@
+{
+    "Snare": {
+        "index": 0,
+        "icon": "BuildButton_consumable_snare",
+        "previewSprite": "trap_snare_idle",
+        "price": 0,
+        "cooldown": 10.0,
+        "unlockCondition": {
+            "stage": "LostRoyals",
+            "level": 0
+        },
+        "actionType": "Install"
+    },
+    "Bomb": {
+        "index": 1,
+        "icon": "BuildButton_consumable_bomb",
+        "previewSprite": "trap_bomb_idle",
+        "price": 0,
+        "cooldown": 10.0,
+        "unlockCondition": {
+            "stage": "Chambers",
+            "level": 0
+        },
+        "actionType": "Install"
+    },
+    "Repair": {
+        "index": 2,
+        "icon": "BuildButton_consumable_repair",
+        "previewSprite": "trap_repair",
+        "price": 0,
+        "cooldown": 10.0,
+        "unlockCondition": {
+            "stage": "Goldrush",
+            "level": 0
+        },
+        "actionType": "InstantOnDestructible"
+    },
+    "Fear": {
+        "index": 3,
+        "icon": "BuildButton_consumable_fear",
+        "previewSprite": "trap_fear_idle",
+        "price": 0,
+        "cooldown": 10.0,
+        "unlockCondition": {
+            "stage": "Chasm",
+            "level": 0
+        },
+        "actionType": "Install"
+    },
+    "Firebat": {
+        "index": 4,
+        "icon": "BuildButton_consumable_firebat",
+        "previewSprite": "firebat_egg_0",
+        "price": 0,
+        "cooldown": 20.0,
+        "unlockCondition": {
+            "stage": "Sewers",
+            "level": 0
+        },
+        "actionType": "Install"
+    },
+    "Boost": {
+        "index": 5,
+        "icon": "BuildButton_consumable_boost",
+        "previewSprite": "trap_boost",
+        "price": 0,
+        "cooldown": 20.0,
+        "unlockCondition": {
+            "stage": "Mineshaft",
+            "level": 0
+        },
+        "actionType": "InstantOnTrap"
+    },
+    "Frost": {
+        "index": 6,
+        "icon": "BuildButton_consumable_frost",
+        "previewSprite": "frostrune_0",
+        "price": 0,
+        "cooldown": 10.0,
+        "unlockCondition": {
+            "stage": "Twist",
+            "level": 0
+        },
+        "actionType": "Install"
+    },
+    "Midas": {
+        "index": 7,
+        "icon": "BuildButton_consumable_midas",
+        "previewSprite": "midas_0",
+        "price": 0,
+        "cooldown": 15.0,
+        "unlockCondition": {
+            "stage": "Shallow",
+            "level": 0
+        },
+        "actionType": "Install"
+    }
+}

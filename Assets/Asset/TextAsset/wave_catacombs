@@ -1,0 +1,193 @@
+{
+	"waveCount": 8,
+	"waves":[
+        {
+            "wave": 1,
+            "postDelay": 15.0,
+            "spawn": [
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.1, "count": 2, "routes": [ 0 ] },
+
+{"types": [ "Adventurer" ], "interval": 1.5, "typeInterval": 0.1, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Warrior" ], "interval": 1.5, "typeInterval": 0.1, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 3.5, "typeInterval": 1.0, "count": 5, "routes": [ 0 ] },
+                
+                
+            ]
+        },
+        {
+            "wave": 2,
+            "postDelay": 15.0,
+            "spawn": [
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 3, "routes": [ 0 ] },
+
+{"types": [ "Adventurer", "Adventurer", "Adventurer", "King" ], "interval": 1.5, "typeInterval": 0.7, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 3, "routes": [ 0 ] },
+
+{"types": [ "Warrior" ], "interval": 1.5, "typeInterval": 0.0, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 3.5, "typeInterval": 1.0, "count": 10, "routes": [ 0 ] },
+                
+                
+            ]
+        },
+        {
+            "wave": 3,
+            "postDelay": 15.0,
+            "spawn": [
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 3, "routes": [ 0 ] },
+
+{"types": [ "Adventurer", "Adventurer", "Thief", "King" ], "interval": 1.5, "typeInterval": 0.5, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 3, "routes": [ 0 ] },
+
+{"types": [ "Warrior", "King" ], "interval": 1.5, "typeInterval": 0.0, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 3.5, "typeInterval": 1.0, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Knight" ], "interval": 1.0, "typeInterval": 0.0, "count": 10, "routes": [ 0, 1 ] },
+                
+                
+            ]
+        },
+        {
+            "wave": 4,
+            "postDelay": 15.0,
+            "spawn": [
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Thief", "Thief", "Thief", "King" ], "interval": 1.5, "typeInterval": 0.5, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior", "King" ], "interval": 0.5, "typeInterval": 0.0, "count": 15, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 1.5, "typeInterval": 1.0, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Knight", "Priest" ], "interval": 1.0, "typeInterval": 0.0, "count": 15, "routes": [ 0, 1 ] },
+                
+                
+            ]
+        },
+        {
+            "wave": 5,
+            "postDelay": 15.0,
+            "spawn": [
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Journeyman", "King" ], "interval": 1.5, "typeInterval": 0.5, "count": 10, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior", "King" ], "interval": 0.5, "typeInterval": 0.0, "count": 15, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 1.5, "typeInterval": 1.0, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Knight", "Priest" ], "interval": 1.0, "typeInterval": 0.0, "count": 20, "routes": [ 0, 1 ] },
+                
+                
+            ]
+        },
+        {
+            "wave": 6,
+            "postDelay": 15.0,
+            "spawn": [
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Journeyman", "King" ], "interval": 1.5, "typeInterval": 0.5, "count": 10, "routes": [ 0, 1 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 0.5, "typeInterval": 0.5, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "HeavyArmor", "Priest" ], "interval": 1.0, "typeInterval": 0.0, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.5, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+                
+{"types": [ "Brute" ], "interval": 1.0, "typeInterval": 0.0, "count": 1, "routes": [ 0 ] },
+                
+            ]
+        },
+        {
+            "wave": 7,
+            "postDelay": 15.0,
+            "spawn": [
+{"types": [ "Dwarf" ], "interval": 1.5, "typeInterval": 0.5, "count": 2, "routes": [ 0, 1 ] },
+
+
+{"types": [ "Horseman" ], "interval": 1.5, "typeInterval": 0.5, "count": 3, "routes": [ 0, 1 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Journeyman" ], "interval": 0.5, "typeInterval": 0.5, "count": 30, "routes": [ 0, 1 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "King" ], "interval": 0.5, "typeInterval": 0.0, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "HeavyArmor", "Priest", "Priest" ], "interval": 1.3, "typeInterval": 0.0, "count": 30, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Dwarf" ], "interval": 1.5, "typeInterval": 0.5, "count": 2, "routes": [ 0, 1 ] },
+
+{"types": [ "Horseman" ], "interval": 1.5, "typeInterval": 0.5, "count": 3, "routes": [ 0, 1 ] },
+
+{"types": [ "Warrior" ], "interval": 0.5, "typeInterval": 0.0, "count": 30, "routes": [ 0, 1 ] },
+                
+{"types": [ "Brute" ], "interval": 5.0, "typeInterval": 0.0, "count": 3, "routes": [ 0 ] },
+                
+            ]
+        },
+        {
+            "wave": 8,
+            "postDelay": 15.0,
+            "spawn": [
+{"types": [ "Dwarf" ], "interval": 1.5, "typeInterval": 0.5, "count": 2, "routes": [ 0, 1 ] },
+
+{"types": [ "Horseman" ], "interval": 1.5, "typeInterval": 0.5, "count": 5, "routes": [ 0, 1 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior" ], "interval": 0.5, "typeInterval": 0.0, "count": 30, "routes": [ 0, 1 ] },
+
+{"types": [ "Dwarf" ], "interval": 1.5, "typeInterval": 0.5, "count": 2, "routes": [ 0, 1 ] },
+
+{"types": [ "Journeyman" ], "interval": 0.3, "typeInterval": 0.0, "count": 40, "routes": [ 0, 1 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Warrior_Veteran", "Marksman", "King" ], "interval": 0.5, "typeInterval": 0.5, "count": 20, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "HeavyArmor", "Priest", "Priest" ], "interval": 1.3, "typeInterval": 0.0, "count": 30, "routes": [ 0 ] },
+
+{"types": [ "Drummer" ], "interval": 1.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+
+{"types": [ "Dwarf" ], "interval": 1.5, "typeInterval": 0.5, "count": 2, "routes": [ 0, 1 ] },
+
+{"types": [ "Horseman" ], "interval": 1.5, "typeInterval": 0.5, "count": 3, "routes": [ 0, 1 ] },
+                
+{"types": [ "Brute" ], "interval": 3.0, "typeInterval": 0.0, "count": 5, "routes": [ 0 ] },
+                
+            ]
+        }
+	]
+}

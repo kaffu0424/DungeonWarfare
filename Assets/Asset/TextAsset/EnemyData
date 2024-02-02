@@ -1,0 +1,152 @@
+{
+    "Peasant": {
+        "index": 0,
+        "gold": 5,
+        "exp": 10
+    },
+    "Adventurer": {
+        "index": 1,
+        "gold": 5,
+        "exp": 10
+    },
+    "Warrior": {
+        "index": 2,
+        "gold": 5,
+        "exp": 20
+    },
+    "Knight": {
+        "index": 3,
+        "gold": 10,
+        "exp": 50
+    },
+    "Priest": {
+        "index": 4,
+        "gold": 10,
+        "exp": 25
+    },
+    "Thief": {
+        "index": 5,
+        "gold": 10,
+        "exp": 25
+    },
+    "Wizard": {
+        "index": 6,
+        "gold": 10,
+        "exp": 100
+    },
+    "Golem": {
+        "index": 7,
+        "gold": 0,
+        "exp": 0
+    },
+    "Copter": {
+        "index": 8,
+        "gold": 10,
+        "exp": 30
+    },
+    "Dwarf": {
+        "index": 9,
+        "gold": 10,
+        "exp": 30
+    },
+    "Marksman": {
+        "index": 10,
+        "gold": 5,
+        "exp": 30
+    },
+    "Demon": {
+        "index": 11,
+        "gold": 0,
+        "exp": 0
+    },
+    "Skeleton": {
+        "index": 12,
+        "gold": 0,
+        "exp": 0
+    },
+    "Necromancer": {
+        "index": 13,
+        "gold": 0,
+        "exp": 0
+    },
+    "Firebat": {
+        "index": 14,
+        "gold": 0,
+        "exp": 0
+    },
+    "King": {
+        "index": 15,
+        "gold": 100,
+        "exp": 5
+    },
+    "PathWisp": {
+        "index": 16,
+        "gold": 0,
+        "exp": 0 
+    },
+    "Warrior_Veteran": {
+        "index": 17,
+        "gold": 5,
+        "exp": 25
+    },
+    "Horseman": {
+        "index": 18,
+        "gold": 10,
+        "exp": 30
+    },
+    "HeavyArmor": {
+        "index": 19,
+        "gold": 10,
+        "exp": 80
+    },
+    "Druid": {
+        "index": 20,
+        "gold": 10,
+        "exp": 20
+    },
+    "Journeyman": {
+        "index": 21,
+        "gold": 10,
+        "exp": 30
+    },
+    "Brute": {
+        "index": 22,
+        "gold": 10,
+        "exp": 150
+    },
+    "Drummer": {
+        "index": 23,
+        "gold": 15,
+        "exp": 50
+    },
+    "Critter": {
+        "index": 24,
+        "gold": 0,
+        "exp": 0
+    },
+    "Boss_Robot": {
+        "index": 25,
+        "gold": 0,
+        "exp": 100000
+    },
+    "Bobomb": {
+        "index": 26,
+        "gold": 0,
+        "exp": 0
+    },
+    "Midasman": {
+        "index": 27,
+        "gold": 10,
+        "exp": 500
+    },
+    "Bloon": {
+        "index": 28,
+        "gold": 5,
+        "exp": 10
+    },
+    "Boss_Knight": {
+        "index": 29,
+        "gold": 0,
+        "exp": 25000
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "1": {
+        "slotCount": 2,
+        "expToNextLevel": 500,
+        "gemBonus":  0
+    },
+    "2": {
+        "slotCount": 3,
+        "expToNextLevel": 2000,
+        "gemBonus":  2
+    },
+    "3": {
+        "slotCount": 4,
+        "expToNextLevel": 5000,
+        "gemBonus":  3
+    },
+    "4": {
+        "slotCount": 4,
+        "expToNextLevel": 6000,
+        "gemBonus":  4
+    },
+    "5": {
+        "slotCount": 4,
+        "expToNextLevel": 7000,
+        "gemBonus":  5
+    },
+    "6": {
+        "slotCount": 4,
+        "expToNextLevel": 8000,
+        "gemBonus":  6
+    },
+    "7": {
+        "slotCount": 4,
+        "expToNextLevel": 9000,
+        "gemBonus":  7
+    },
+    "8": {
+        "slotCount": 4,
+        "expToNextLevel": 10000,
+        "gemBonus":  8
+    },
+    "9": {
+        "slotCount": 4,
+        "expToNextLevel": 15000,
+        "gemBonus":  9
+
+    },
+    "10": {
+        "slotCount": 5,
+        "expToNextLevel": 20000,
+        "gemBonus":  10
+    },
+    "11": {
+        "slotCount": 5,
+        "expToNextLevel": 25000,
+        "gemBonus":  11
+    },
+    "12": {
+        "slotCount": 5,
+        "expToNextLevel": 40000,
+        "gemBonus":  12
+    },
+    "13": {
+        "slotCount": 5,
+        "expToNextLevel": 60000,
+        "gemBonus":  13
+    },
+    "14": {
+        "slotCount": 5,
+        "expToNextLevel": 80000,
+        "gemBonus":  14
+    },
+    "15": {
+        "slotCount": 6,
+        "expToNextLevel": 90000,
+        "gemBonus":  15
+    },
+    "16": {
+        "slotCount": 6,
+        "expToNextLevel": 100000,
+        "gemBonus":  16
+    },
+    "17": {
+        "slotCount": 6,
+        "expToNextLevel": 110000,
+        "gemBonus":  17
+    },
+    "18": {
+        "slotCount": 6,
+        "expToNextLevel": 130000,
+        "gemBonus":  18
+    },
+    "19": {
+        "slotCount": 7,
+        "expToNextLevel": 150000,
+        "gemBonus":  19
+    },
+    "20": {
+        "slotCount": 7,
+        "expToNextLevel": 170000,
+        "gemBonus":  20
+    },
+    "21": {
+        "slotCount": 7,
+        "expToNextLevel": 200000,
+        "gemBonus":  21
+    },
+    "22": {
+        "slotCount": 7,
+        "expToNextLevel": 250000,
+        "gemBonus":  22
+    },
+    "23": {
+        "slotCount": 7,
+        "expToNextLevel": 300000,
+        "gemBonus":  23
+    },
+    "24": {
+        "slotCount": 7,
+        "expToNextLevel": 350000,
+        "gemBonus":  24
+    },
+    "25": {
+        "slotCount": 7,
+        "expToNextLevel": 400000,
+        "gemBonus":  25
+    },
+    "26": {
+        "slotCount": 8,
+        "expToNextLevel": 450000,
+        "gemBonus":  26
+    },
+    "27": {
+        "slotCount": 8,
+        "expToNextLevel": 500000,
+        "gemBonus":  27
+    },
+    "28": {
+        "slotCount": 8,
+        "expToNextLevel": 550000,
+        "gemBonus":  28
+    },
+    "29": {
+        "slotCount": 8,
+        "expToNextLevel": 600000,
+        "gemBonus":  29
+    },
+    "30": {
+        "slotCount": 9,
+        "expToNextLevel": 650000,
+        "gemBonus":  30
+    }
+}
