@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Sprite_2
+      name: UI_Sprite_Dart
       rect:
         serializedVersion: 2
         x: 697
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Sprite_3
+      name: UI_Sprite_Spike
       rect:
         serializedVersion: 2
         x: 750
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Sprite_4
+      name: UI_Sprite_Arrow
       rect:
         serializedVersion: 2
         x: 825
@@ -206,9 +206,9 @@ TextureImporter:
     nameFileIdTable:
       UI_Sprite_0: 883332393
       UI_Sprite_1: 2053323660
-      UI_Sprite_2: -529513651
-      UI_Sprite_3: 1580057080
-      UI_Sprite_4: 1835887459
+      UI_Sprite_Arrow: 1835887459
+      UI_Sprite_Dart: -529513651
+      UI_Sprite_Spike: 1580057080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

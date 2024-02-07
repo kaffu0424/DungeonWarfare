@@ -7,7 +7,6 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     [Header("unity")]
-    [SerializeField] private TextMeshProUGUI gold_Text;
     [SerializeField] private PlayerController playerController;
 
     [Header("info")]
@@ -36,7 +35,7 @@ public class GameManager : Singleton<GameManager>
 
     public void StageStart(int stageLevel)
     {
-        UpdateGold(1000 + (player_level * 50));
+        UseGold(1000 + (player_level * 50));
 
         if (stageLevel == -1)
             return;
@@ -44,14 +43,16 @@ public class GameManager : Singleton<GameManager>
         playerController.SetStageData(StageDatas[stageLevel]);
     }
 
-    public void UpdateGold(int value)
+    public void UseGold(int value)
     {
         p_gold += value;
-        gold_Text.text = p_gold.ToString();
+        UIManager.Instance.UpdateGold(p_gold);
     }
 
     void SetStageData()
     {
+        // 타일맵에서 다음 타일의 정보를 확인할수있는 방법이 필요함
+        // 2차원 배열에 맵 정보를 담는 방법밖에 생각이 안난다..
         StageDatas = new List<StageData>();
 
         int[,] stage0 = new int[11,15]
@@ -71,9 +72,3 @@ public class GameManager : Singleton<GameManager>
         StageDatas.Add(new StageData(stage0,11,15));
     }
 }
-
-/*
-## TODO
-DartTrap.cs  Attack 함수 완성
-설치 방식 구체적으로 변경하기.
-*/

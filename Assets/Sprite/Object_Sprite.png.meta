@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Object_Sprite_0
+      name: Object_Sprite_Dart_1
       rect:
         serializedVersion: 2
         x: 668
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Object_Sprite_1
+      name: Object_Sprite_Dart_2
       rect:
         serializedVersion: 2
         x: 668
@@ -202,7 +202,7 @@ TextureImporter:
         width: 3
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,6 +210,132 @@ TextureImporter:
       bones: []
       spriteID: c53c359ace54ede45b8a89e02cbc8a81
       internalID: -2025426637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Spike_1
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 536
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc52167faed40874ab602112b6064adc
+      internalID: 130913480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Spike_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 490
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527b3fb0433328f428f981d1e95182d3
+      internalID: -56096727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Spike_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 499
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0405a72925c3847ade673f38a84b81
+      internalID: 268431653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Spike_4
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 506
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c717606d40cc3459c77745b20b8a7c
+      internalID: -1683090798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Spike_5
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 512
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0153ed791e83fb342a390329605dfb1e
+      internalID: -1430018219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Spike_6
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 529
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bede205e9fc5bf4a8f90317b283f601
+      internalID: -450369918
       vertices: []
       indices: 
       edges: []
@@ -225,11 +351,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Object_Sprite_0: 302022949
-      Object_Sprite_1: 299879113
       Object_Sprite_2: 2031153823
       Object_Sprite_3: -1304497719
       Object_Sprite_4: -2025426637
+      Object_Sprite_Dart_1: 302022949
+      Object_Sprite_Dart_2: 299879113
+      Object_Sprite_Spike_1: 130913480
+      Object_Sprite_Spike_2: -56096727
+      Object_Sprite_Spike_3: 268431653
+      Object_Sprite_Spike_4: -1683090798
+      Object_Sprite_Spike_5: -1430018219
+      Object_Sprite_Spike_6: -450369918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

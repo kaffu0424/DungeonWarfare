@@ -8,7 +8,7 @@ public abstract class Trap : MonoBehaviour
     protected TrapData trap_data;
     [SerializeField] protected bool canAttak;
     
-    public void InitializeTrap(int _id, string _name, int _dmg, float _delay, int _cost, int _hp, int _range, int _type)
+    public void InitializeTrap(int _id, string _name, int _dmg, float _delay, int _cost, int _hp, int _range, InstallType _type)
     {
         canAttak = true;
 
