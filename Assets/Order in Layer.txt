@@ -1,0 +1,11 @@
+tileMap 
+ Wall 	: 60
+ sub 		: 61
+ Ground 	: 0
+
+Trap
+ Wall Trap		: 80
+ Ground Trap	: 10
+
+Player
+ TrapSprite		: 85

@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Object_Sprite_2
+      name: Object_Sprite_enemy1_move1
       rect:
         serializedVersion: 2
-        x: 359
+        x: 357
         y: 348
-        width: 13
-        height: 13
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,13 +131,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Object_Sprite_3
+      name: Object_Sprite_enemy1_move2
       rect:
         serializedVersion: 2
-        x: 359
-        y: 328
-        width: 13
-        height: 15
+        x: 357
+        y: 326
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Object_Sprite_4
+      name: Object_Sprite_DartBullet
       rect:
         serializedVersion: 2
         x: 55
@@ -340,6 +340,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy1_move3
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 482
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece5bb5027a00ab4b81c55438b8c5e9f
+      internalID: -1847732085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy1_move4
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 461
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a135b6eac44af34e9dc27d8bce00fe9
+      internalID: 432820898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy1_move5
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 442
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f28d1991e88ea43b366b13a97a94ce
+      internalID: -976021981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -351,9 +414,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Object_Sprite_2: 2031153823
-      Object_Sprite_3: -1304497719
-      Object_Sprite_4: -2025426637
+      Object_Sprite_DartBullet: -2025426637
       Object_Sprite_Dart_1: 302022949
       Object_Sprite_Dart_2: 299879113
       Object_Sprite_Spike_1: 130913480
@@ -362,6 +423,11 @@ TextureImporter:
       Object_Sprite_Spike_4: -1683090798
       Object_Sprite_Spike_5: -1430018219
       Object_Sprite_Spike_6: -450369918
+      Object_Sprite_enemy1_move1: 2031153823
+      Object_Sprite_enemy1_move2: -1304497719
+      Object_Sprite_enemy1_move3: -1847732085
+      Object_Sprite_enemy1_move4: 432820898
+      Object_Sprite_enemy1_move5: -976021981
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

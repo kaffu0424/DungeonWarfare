@@ -5,13 +5,10 @@ using UnityEngine.PlayerLoop;
 
 public class DartTrap : Trap
 {
-    [SerializeField] Animator trap_ani;
-    [SerializeField] GameObject bullet;
-
-    private TrapData data;
+    [SerializeField] Transform shootPosition;
     private void Start()
     {
-        data = TrapManager.Instance.GetData(0);
+        TrapData data = TrapManager.Instance.GetData(0);
         InitializeTrap(
             data.trap_id,
             data.trap_name,
@@ -22,12 +19,13 @@ public class DartTrap : Trap
             data.trap_range,
             data.trap_type
             );
-        // InitializeTrap(0, "DartTrap", 2, 0.6f, 500, 9999, 3, 1);
+
         trap_ani = GetComponent<Animator>();
     }
-
-    protected override void attack()
+    protected override void Attack()
     {
-        trap_ani.SetTrigger("Attack");
+        DartBullet bullet = TrapManager.Instance.GetDartBullet();
+        bullet.transform.position = shootPosition.position;
+        bullet.MoveBullet(this.transform.localEulerAngles);
     }
 }

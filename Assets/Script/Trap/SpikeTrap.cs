@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class SpikeTrap : Trap
 {
-    [SerializeField] Animator trap_ani;
-
-    private TrapData data;
     void Start()
     {
-        data = TrapManager.Instance.GetData(1);
+        TrapData data = TrapManager.Instance.GetData(1);
         InitializeTrap(
             data.trap_id,
             data.trap_name,
@@ -21,14 +18,16 @@ public class SpikeTrap : Trap
             data.trap_type 
             );
 
-        // InitializeTrap(0, "SpikeTrap", 2, 0.6f, 500, 9999, 0, 0);
-
         trap_ani = GetComponent<Animator>();
     }
 
-    protected override void attack()
+    protected override void Attack()
     {
-        throw new System.NotImplementedException();
-    }
 
+    }
+    // ## TODO
+    // Spike 함정 구현하기.
+    // 몬스터 구현하기.
+
+    // GetComponent를 사용하지않고 몬스터에게 데미지 넣어줄 방법 생각하기 ☆☆
 }

@@ -6,36 +6,35 @@ using UnityEngine;
 public abstract class Trap : MonoBehaviour
 {
     protected TrapData trap_data;
-    [SerializeField] protected bool canAttak;
+
+    [Header("Trap infomation")]
+    [SerializeField] protected Animator trap_ani;
+    [SerializeField] protected bool canAttack;
     
     public void InitializeTrap(int _id, string _name, int _dmg, float _delay, int _cost, int _hp, int _range, InstallType _type)
     {
-        canAttak = true;
+        canAttack = true;
 
         trap_data = new TrapData(_id, _name, _dmg, _delay, _cost, _hp, _range, _type);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(canAttak)
+        if(canAttack)
         {
-            if (collision.CompareTag("Enemy"))
-                TrapFunction();
+            if(collision.CompareTag("Enemy"))
+            {
+                canAttack = false;
+                StartCoroutine(AttackDelay());
+            }
         }
     }
 
-    protected virtual void TrapFunction()
+    protected abstract void Attack();
+    IEnumerator AttackDelay()
     {
-        canAttak = false;
-        attack();
-        StartCoroutine(attakDelay());
-    }
-
-    protected abstract void attack();
-    IEnumerator attakDelay()
-    {
+        trap_ani.SetTrigger("Attack");
         yield return new WaitForSeconds(trap_data.trap_delay);
-        canAttak = true;
+        canAttack = true;
     }
-
 }

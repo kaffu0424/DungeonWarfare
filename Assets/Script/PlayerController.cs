@@ -19,7 +19,10 @@ public class PlayerController : MonoBehaviour
     private int[] dy = { -1, 0, 1, 0 };
     private int[] dx = { 0, 1, 0, -1 };
 
-    [Header("info")]
+    [Header("Unity")]
+    [SerializeField] private Transform trap_parent;
+
+    [Header("Select Trap infomation")]
     [SerializeField] private SpriteRenderer select_Sprite;  // 선택한 함정의 SpriteRenderer
     [SerializeField] private GameObject select_Object;      // 선택한 함정
     [SerializeField] private int install_Cost;              // 선택한 함정 가격
@@ -27,11 +30,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool doing_install;            // 현재 설치중 상태
     [SerializeField] private TrapDirection trap_direction;
 
-    private StageData stage_data;
-
     [Header("Mouse Info")]
     [SerializeField] private int cur_y;
     [SerializeField] private int cur_x;
+
+    [Header("Stage Infomation")]
+    private StageData stage_data;
+    private bool[,] install_positionData;
     private void Start()
     {
         CancelTrap();
@@ -41,11 +46,11 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(1))
         {
-            CancelTrap();               // 오브젝트 선택 취소
+            CancelTrap();               // 함정 선택 취소
         }
 
-        if (select_Object != null)
-            MouseController();
+        if (select_Object != null)      // 선택된 함정이 있을때
+            MouseController();          // 마우스 움직임
     }
 
     public void SelectTrap(int _id)
@@ -85,73 +90,72 @@ public class PlayerController : MonoBehaviour
 
     void MouseController()
     {
+        // 마우스 한칸씩 이동
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition = new Vector2(Mathf.Round(mousePosition.x), Mathf.Round(mousePosition.y));
         transform.position = mousePosition;
 
-        if(doing_install)
+        if(doing_install) // 설치중
         {
-            if(Input.GetMouseButtonDown(0))
+            InstallTrapDirection(); // 설치 방향 선택
+            return; // 설치 취소 || 설치 완료 전까지 return
+        } 
+
+        CheckCanInstall(); // 설치 가능한지 여부 확인.
+        InstallTrap(); // 설치하기 ,  바닥은 즉시 설치, 벽은 설치중으로 넘어감 
+    }
+
+    void InstallTrapDirection()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
+
+            if (hit.collider != null)
             {
-                Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
-
-                if(hit.collider != null)
+                GameObject obj = hit.collider.gameObject;
+                Debug.Log(obj.name);
+                if (obj.CompareTag(directionArrowTag))
                 {
-                    GameObject obj = hit.collider.gameObject;
-                    Debug.Log(obj.name);
-                    if(obj.CompareTag(directionArrowTag))
-                    {
-                        if (obj.name == "BOTTOM")
-                            trap_direction = TrapDirection.BOTTOM;
-                        else if (obj.name == "RIGHT")
-                            trap_direction = TrapDirection.RIGHT;
-                        else if (obj.name == "TOP")
-                            trap_direction = TrapDirection.TOP;
-                        if (obj.name == "LEFT")
-                            trap_direction = TrapDirection.LEFT;
-                    }
+                    if (obj.name == "BOTTOM")
+                        trap_direction = TrapDirection.BOTTOM;
+                    else if (obj.name == "RIGHT")
+                        trap_direction = TrapDirection.RIGHT;
+                    else if (obj.name == "TOP")
+                        trap_direction = TrapDirection.TOP;
+                    if (obj.name == "LEFT")
+                        trap_direction = TrapDirection.LEFT;
                 }
-
-                if (trap_direction == TrapDirection.NONE)
-                    return;
-                else if (trap_direction == TrapDirection.BOTTOM)
-                    install(new Vector3(0, 0, 90));
-                else if (trap_direction == TrapDirection.RIGHT)
-                    install(new Vector3(0, 0, 180));
-                else if (trap_direction == TrapDirection.TOP)
-                    install(new Vector3(0, 0, 270));
-                else if (trap_direction == TrapDirection.LEFT)
-                    install(Vector3.zero);
             }
-            /*
-             * ## TODO
-             * 함정 중복 설치 버그 해결하기 @@
-             */
-            return;
-        }
-        else
-        {
-            CheckCanInstall();
-        }
 
-        InstallTrap();
+            if (trap_direction == TrapDirection.NONE)
+                return;
+            else if (trap_direction == TrapDirection.BOTTOM)
+                install(new Vector3(0, 0, 90));
+            else if (trap_direction == TrapDirection.RIGHT)
+                install(new Vector3(0, 0, 180));
+            else if (trap_direction == TrapDirection.TOP)
+                install(new Vector3(0, 0, 270));
+            else if (trap_direction == TrapDirection.LEFT)
+                install(Vector3.zero);
+        }
     }
 
     void InstallTrap()
     {
         if (Input.GetMouseButtonDown(0) && select_Sprite.color == Color.green)
         {
-            doing_install = true;
+            doing_install = true; // 설치중 상태 전환
             select_Sprite.transform.parent = null;
 
-            InstallDirection();
+            InstallDirection(); // 설치 방향 확인
         }
     }
 
     void InstallDirection()
     {
-        if (install_type == 0)
+        if (install_type == 0) // 바닥함정은 위치에 즉시 설치
         {
             install(Vector3.zero);
             return;
@@ -175,7 +179,9 @@ public class PlayerController : MonoBehaviour
 
     void install(Vector3 rotate)
     {
-        Instantiate(select_Object, select_Sprite.transform.position, Quaternion.Euler(rotate));
+        install_positionData[(int)select_Sprite.transform.position.y, (int)select_Sprite.transform.position.x] = true;
+        GameObject obj = Instantiate(select_Object, select_Sprite.transform.position, Quaternion.Euler(rotate));
+        obj.transform.parent = trap_parent;
         GameManager.Instance.UseGold(-install_Cost);
         CancelTrap();
     }
@@ -206,7 +212,7 @@ public class PlayerController : MonoBehaviour
         if (cur_x < 0 || cur_y < 0 || cur_x >= stage_data.size_x || cur_y >= stage_data.size_y)
             return;
 
-        if (stage_data.pos[cur_y, cur_x] == (int)install_type)
+        if (stage_data.pos[cur_y, cur_x] == (int)install_type && !install_positionData[cur_y, cur_x])
             select_Sprite.color = Color.green;
         else
             select_Sprite.color = Color.red;
@@ -222,7 +228,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (stage_data.pos[cur_y, cur_x] == (int)install_type && checkAdjacent(cur_y, cur_x)) // 설치 가능한 위치
+        if (stage_data.pos[cur_y, cur_x] == (int)install_type && checkAdjacent(cur_y, cur_x) && !install_positionData[cur_y, cur_x]) // 설치 가능한 위치
         {
             select_Sprite.color = Color.green;
         }
@@ -256,6 +262,7 @@ public class PlayerController : MonoBehaviour
     public void SetStageData(StageData data)
     {
         stage_data = data;
+        install_positionData = new bool[data.size_y, data.size_x];
     }
 
     /*
