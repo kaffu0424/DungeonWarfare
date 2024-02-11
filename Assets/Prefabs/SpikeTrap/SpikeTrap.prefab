@@ -123,6 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trap_ani: {fileID: 0}
   canAttack: 0
+  hitbox: {fileID: 0}
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!61 &-568969230385724786
 BoxCollider2D:
   m_ObjectHideFlags: 0

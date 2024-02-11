@@ -10,6 +10,7 @@ TagManager:
   - DirectionArrow
   - Trap
   - Bullet
+  - SpikeHit
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DartBullet : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    int damage = 0;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Wall"))
@@ -16,14 +16,17 @@ public class DartBullet : MonoBehaviour
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             rb.velocity = Vector2.zero;
+            collision.gameObject.GetComponent<Enemy>().GetDamage(damage);
             TrapManager.Instance.ReturnDartBullet(this);
         }
     }
 
-    public void MoveBullet(Vector3 euler)
+    public void MoveBullet(Vector3 euler, int _damage)
     {
         if(rb == null) 
             rb = GetComponent<Rigidbody2D>();
+
+        damage = _damage;
 
         if (-1 <= euler.z && euler.z <= 1) // left
         {

@@ -5,6 +5,7 @@ using UnityEngine.PlayerLoop;
 
 public class DartTrap : Trap
 {
+    [Header("Unity")]
     [SerializeField] Transform shootPosition;
     private void Start()
     {
@@ -26,6 +27,6 @@ public class DartTrap : Trap
     {
         DartBullet bullet = TrapManager.Instance.GetDartBullet();
         bullet.transform.position = shootPosition.position;
-        bullet.MoveBullet(this.transform.localEulerAngles);
+        bullet.MoveBullet(this.transform.localEulerAngles,trap_data.trap_damage);
     }
 }

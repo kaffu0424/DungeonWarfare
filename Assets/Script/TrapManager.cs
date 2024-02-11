@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TrapManager : Singleton<TrapManager>
@@ -28,9 +29,8 @@ public class TrapManager : Singleton<TrapManager>
         dartBullets = new Queue<DartBullet>();
         for(int i = 0; i < 5; i++)
         {
-            DartBullet dartBullet = Instantiate(dartBullet_prefab).GetComponent<DartBullet>();
+            DartBullet dartBullet = Instantiate(dartBullet_prefab, this.transform).GetComponent<DartBullet>();
             dartBullet.gameObject.SetActive(false);
-            dartBullet.transform.parent = this.transform;
             dartBullets.Enqueue(dartBullet);
         }
     }
@@ -68,13 +68,13 @@ public class TrapManager : Singleton<TrapManager>
         return trap_Sprite[id];
     }
 
+    #region 다트함정 총알 오브젝트 풀링
     public DartBullet GetDartBullet()
     {
         if(dartBullets.Count == 0)
         {
-            DartBullet dartBullet = Instantiate(dartBullet_prefab).GetComponent<DartBullet>();
+            DartBullet dartBullet = Instantiate(dartBullet_prefab, this.transform).GetComponent<DartBullet>();
             dartBullet.gameObject.SetActive(false);
-            dartBullet.transform.parent = this.transform;
             dartBullets.Enqueue(dartBullet);
         }
 
@@ -90,4 +90,5 @@ public class TrapManager : Singleton<TrapManager>
         bullet.transform.position = Vector3.zero;   // 위치초기화
         dartBullets.Enqueue(bullet);                // queue 삽입
     }
+    #endregion
 }
