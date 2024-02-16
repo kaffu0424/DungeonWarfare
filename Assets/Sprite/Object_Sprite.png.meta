@@ -403,6 +403,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy2_move5
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1134
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913fa26a2b4464e4bbe7500d91707a1a
+      internalID: -672049559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy2_move4
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1125
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54848ce7d9c597743b1a0c0f8f437654
+      internalID: -457846613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy2_move3
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1117
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8dbdb052aef5a4e92f34fb8f3eedbf
+      internalID: 685059635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy2_move2
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1112
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ee6566435e8e943b4f04a16e40a30d
+      internalID: -1905721169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy2_move1
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1085
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed753b5f41f3fe45a65a3e07de6f795
+      internalID: 2089461239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -428,6 +533,11 @@ TextureImporter:
       Object_Sprite_enemy1_move3: -1847732085
       Object_Sprite_enemy1_move4: 432820898
       Object_Sprite_enemy1_move5: -976021981
+      Object_Sprite_enemy2_move1: 2089461239
+      Object_Sprite_enemy2_move2: -1905721169
+      Object_Sprite_enemy2_move3: 685059635
+      Object_Sprite_enemy2_move4: -457846613
+      Object_Sprite_enemy2_move5: -672049559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
