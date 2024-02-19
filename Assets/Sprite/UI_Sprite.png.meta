@@ -193,6 +193,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI_lobby
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 562
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171c7899c77c2ba46a50639f4127d044
+      internalID: 2053323660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_logo
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1078
+        width: 138
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1915c3c14f6a9499fe323ddeb9e44b
+      internalID: -114705732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_frame_
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 877
+        width: 34
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e64170a36439940b18028cbe574a99
+      internalID: -559060959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -205,10 +268,12 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       UI_Sprite_0: 883332393
-      UI_Sprite_1: 2053323660
       UI_Sprite_Arrow: 1835887459
       UI_Sprite_Dart: -529513651
       UI_Sprite_Spike: 1580057080
+      UI_frame_: -559060959
+      UI_lobby: 2053323660
+      UI_logo: 1361062529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

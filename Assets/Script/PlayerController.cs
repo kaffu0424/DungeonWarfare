@@ -115,7 +115,6 @@ public class PlayerController : MonoBehaviour
             if (hit.collider != null)
             {
                 GameObject obj = hit.collider.gameObject;
-                Debug.Log(obj.name);
                 if (obj.CompareTag(directionArrowTag))
                 {
                     if (obj.name == "BOTTOM")

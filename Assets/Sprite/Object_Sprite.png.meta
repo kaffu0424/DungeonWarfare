@@ -508,6 +508,321 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy3_move1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 396
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7edaf76dc199ce47b85ef401ea7d25f
+      internalID: 1457062421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy3_move2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 373
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e460c4d08d53847b9434c1f6ec103d
+      internalID: -265830888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy3_move3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 350
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa00776ea021184c802783a8ae7c103
+      internalID: 814994346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy5_move3
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 448
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0dd6a53482825498991fff8a3dcde0
+      internalID: -657739339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy5_move2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 448
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fe914839179f14a97f88c82d610c5f
+      internalID: 1139877248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy5_move1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 474
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6978e956707aa14594c6c8714982500
+      internalID: -159668015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy4_move3
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 639
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cf4bef244f87b4a9d496e4cc7e5886
+      internalID: -2021909653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy4_move1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 634
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc856ab6adae654a84b5d86b4537708
+      internalID: -1302544990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy4_move2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 639
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beec0cc18782a5543be58106d23d6415
+      internalID: -187402475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy4_move4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 655
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef76e46d85b1139459a32bffec18edd1
+      internalID: -2121877543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy4_move5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 659
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf317d3b6426754b98a93ce20c550a8
+      internalID: -77011457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy6_move1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 707
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6206201e68e5fae48bc01b4e96465247
+      internalID: -1113031512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy6_move2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 731
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b49fdb8436b3d4097006430ec4b1ab
+      internalID: -1920745425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy6_move3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 748
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60eb80abd32759644946c6e90cefcab9
+      internalID: 32635471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_enemy6_move4
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 836
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddadd02e1c1f3d4da2b8f117d1460ea
+      internalID: -418967057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -519,6 +834,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Object_Sprite_2: 1194836143
       Object_Sprite_DartBullet: -2025426637
       Object_Sprite_Dart_1: 302022949
       Object_Sprite_Dart_2: 299879113
@@ -538,6 +854,24 @@ TextureImporter:
       Object_Sprite_enemy2_move3: 685059635
       Object_Sprite_enemy2_move4: -457846613
       Object_Sprite_enemy2_move5: -672049559
+      Object_Sprite_enemy3_move1: 1457062421
+      Object_Sprite_enemy3_move2: -265830888
+      Object_Sprite_enemy3_move3: 814994346
+      Object_Sprite_enemy4_move1: -1302544990
+      Object_Sprite_enemy4_move2: -187402475
+      Object_Sprite_enemy4_move3: -2021909653
+      Object_Sprite_enemy4_move4: -2121877543
+      Object_Sprite_enemy4_move5: -159668015
+      Object_Sprite_enemy5_move1: 1139877248
+      Object_Sprite_enemy5_move2: -657739339
+      Object_Sprite_enemy5_move3: 32635471
+      Object_Sprite_enemy6_move1: -1113031512
+      Object_Sprite_enemy6_move2: 877060696
+      Object_Sprite_enemy6_move3: 32635471
+      Object_Sprite_enemy6_move4: -418967057
+      Object_Sprite_enemy6_move5: -692015025
+      Object_Sprite_enemy6_move6: 1648865161
+      Object_Sprite_enemy6_move7: -1225998207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

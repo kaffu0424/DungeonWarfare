@@ -6,9 +6,10 @@ public class DartBullet : MonoBehaviour
 {
     Rigidbody2D rb;
     int damage = 0;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
             rb.velocity = Vector2.zero;
             TrapManager.Instance.ReturnDartBullet(this);

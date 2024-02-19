@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
-    private EnemyData enemyData;
+    [SerializeField] private EnemyData enemyData;
 
+    [SerializeField] private Vector2 target;
     public void InitEnemy(EnemyData data)
     {
         enemyData = new EnemyData(
@@ -37,16 +40,52 @@ public class Enemy : MonoBehaviour
         if(enemyData.hp <= 0)
         {
             GameManager.Instance.UseGold(enemyData.reward);
-            EnemyManager.Instance.ReturnEnemy(this);
+            Finished();
         }
     }
 
-    public void StartMove()
+    public void Finished()
     {
-        // A* 알고리즘? 데이크스트라 알고리즘?
-        // 1. 알고리즘 선택하기
-        // 2. 선택한 알고리즘으로 출발지점 -> 도착지점까지 최단거리 이동하기
-        // 3. 이동 데이터는 PlayerController 또는 GameManager에서 Stage 정보 가져오기.
-        // 4. Manager에서 한번에 계산하고 동일한 경로로 이동시키기 ?
+        // ## TODO
+        // 1. 목표지점 도착시 플레이어 hp 감소 추가
+        StopAllCoroutines();
+        EnemyManager.Instance.ReturnEnemy(this);
+    }
+
+    public void Move(List<Node> path)
+    {
+        StopAllCoroutines();                                            // 코루틴 시작전 초기화
+        this.transform.position = new Vector2(path[0].x, path[0].y);    // 시작위치로
+        target = new Vector2(path[1].x, path[1].y);                     // 다음 목표
+        StartCoroutine(StartMove(path));                                // 경로 이동 시작
+    }
+
+    public IEnumerator StartMove(List<Node> path)
+    {
+        int targetIdx = 1;
+        while (true)
+        {
+            float moveSpeed = enemyData.moveSpped * Time.deltaTime;
+            this.transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed);
+            if(Vector2.Distance(transform.position, target) <= 0.3f)
+            {
+                if (targetIdx >= path.Count - 1)
+                    break;
+
+                targetIdx++;
+                target = new Vector2(path[targetIdx].x, path[targetIdx].y);
+            }
+            RotateEnemy(target);
+
+            yield return null;
+        }
+
+        Finished();
+    }
+
+    void RotateEnemy(Vector2 target)
+    {
+        Vector3 dir = new Vector3(transform.position.x - target.x, transform.position.y - target.y, 0f);
+        transform.up = dir;
     }
 }

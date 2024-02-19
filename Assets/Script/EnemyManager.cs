@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,7 +33,10 @@ public class EnemyManager : Singleton<EnemyManager>
     private List<Queue<Enemy>> enemys;
     private List<EnemyData> enemy_Data;
 
-    private List<List<Node>> paths;
+    [SerializeField] private List<List<Node>> paths;
+    public List<List<Node>> path
+    { get { return paths; } }
+    
     protected override void InitManager()
     {
         enemy_Data = new List<EnemyData>
@@ -50,22 +54,13 @@ public class EnemyManager : Singleton<EnemyManager>
         {
             EnemyData data = enemy_Data[i];
             enemys.Add(new Queue<Enemy>());
-            for(int j = 0; j < 20; j++)
+            for(int j = 0; j < 1; j++)
             {
                 Enemy enemy = Instantiate(enemyPrefabs[data.id], this.transform).GetComponent<Enemy>();
                 enemy.InitEnemy(data);
                 enemy.gameObject.SetActive(false);
                 enemys[data.id].Enqueue(enemy);
             }
-        }
-
-        paths = new List<List<Node>>();
-    }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            PathFinding();
         }
     }
 
@@ -93,9 +88,10 @@ public class EnemyManager : Singleton<EnemyManager>
         // ## TODO
         // 몬스터 사망 이펙트 추가하기 !
     }
-
     public void PathFinding()
     {
+        paths = new List<List<Node>>();
+
         StageData stage = GameManager.Instance.GetStageData();
 
         Node[,] nodeArray = new Node[stage.size_y, stage.size_x];
@@ -113,12 +109,12 @@ public class EnemyManager : Singleton<EnemyManager>
             }
         }
 
-        foreach (Vector2Int start in stage.start_position)
+        foreach (Tuple<Vector2Int, Vector2Int> pos in stage.start_target)
         {
             openList.Clear(); closeList.Clear();
 
-            Node startNode = nodeArray[start.x, start.y];
-            Node targetNode = nodeArray[stage.target_position.x, stage.target_position.y];
+            Node startNode = nodeArray[pos.Item1.x, pos.Item1.y];
+            Node targetNode = nodeArray[pos.Item2.x, pos.Item2.y];
             Node curNode;
             openList.Add(startNode);
 
@@ -145,8 +141,6 @@ public class EnemyManager : Singleton<EnemyManager>
                     paths[paths.Count - 1].Add(startNode);
                     paths[paths.Count - 1].Reverse();
 
-                    for (int i = 0; i < paths[paths.Count - 1].Count; i++) 
-                        print(i + "번째 ->  " + paths[paths.Count - 1][i].y + ", " + paths[paths.Count - 1][i].x);
                     continue;
                 }
 
@@ -164,6 +158,7 @@ public class EnemyManager : Singleton<EnemyManager>
 
 
     }
+
 
     void OpenListAdd(bool diagonal, int nextY, int nextX, ref Node curNode, ref List<Node> openList, ref List<Node> closeList, ref Node[,] nodeArray,ref StageData stage, ref Node targetNode)
     {
