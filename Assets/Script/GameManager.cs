@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
 {
     [Header("unity")]
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private List<GameObject> stages;
 
     [Header("info")]
     [SerializeField] private int player_level;
@@ -17,7 +18,6 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private int current_StageID;
 
     [SerializeField] public List<StageData> StageDatas;
-    
     public int p_gold
     {
         get { return gold; }
@@ -26,16 +26,25 @@ public class GameManager : Singleton<GameManager>
 
     protected override void InitManager()
     {
-        // 저장 해야할것 level, exp
+        // ## TODO
+        // 1. 플레이어 레벨, exp , 스테이지 진행현황 저장 필요
+        // 1. json 데이터 사용
         player_level = 1;
         player_exp = 0;
-
-        current_StageID = 0;
-        StageStart(current_StageID); // 테스트용  //스테이지 시작하는곳에서 호출하기@@
     }
 
     public void StageStart(int stageLevel)
     {
+        // 현재 스테이지 외 나머지 스테이지 비활성화.
+        for(int i = 0; i < stages.Count; i++)
+        {
+            stages[i].SetActive(false);
+            if ( i == stageLevel )
+                stages[i].SetActive(true);
+        }
+
+        current_StageID = stageLevel;
+
         UseGold(1000 + (player_level * 50));
 
         if (stageLevel == -1)
@@ -55,7 +64,12 @@ public class GameManager : Singleton<GameManager>
         return StageDatas[current_StageID];
     }
 
-    public IEnumerator WaveStart()
+    public void WaveStart()
+    {
+        StartCoroutine(WaveCoroutine());
+    }
+
+    IEnumerator WaveCoroutine()
     {
         StageData currentStage = StageDatas[current_StageID];
         List<List<Node>> path = EnemyManager.Instance.path;
@@ -75,21 +89,18 @@ public class GameManager : Singleton<GameManager>
                 {
                     Enemy enemy = EnemyManager.Instance.GetEnemy(enemyID);
                     enemy.Move(path[enemyStart]);
-                    yield return new WaitForSeconds( 3/enemyCount );
-                    // 50 -> 25초 100 -> 50초
+                    yield return new WaitForSeconds( 0.5f );
                 }
             }
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(4);
         }
+       
+        // ## TODO
+        // 코루틴끝 -> 웨이브 끝
+        // 1. 결과창 보여주기
+        // 2. 결과창에서 로비로 돌아갈수있도록 구현하기
+        // 
+        // 결과창에 표시해야할것
+        // 1. 플레이어가 획득한 경험치
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            StartCoroutine(WaveStart()); 
-        }
-    }
-    // ## TODO
-    // 1. 스테이지 선택 창 만들기
-    // 2. 스테이지 입장시 웨이브 시작버튼 만들기
 }

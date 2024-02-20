@@ -215,27 +215,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_logo
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 1078
-        width: 138
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e1915c3c14f6a9499fe323ddeb9e44b
-      internalID: -114705732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI_frame_
       rect:
         serializedVersion: 2
@@ -244,7 +223,7 @@ TextureImporter:
         width: 34
         height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,6 +231,90 @@ TextureImporter:
       bones: []
       spriteID: 03e64170a36439940b18028cbe574a99
       internalID: -559060959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_stageSelectFrame
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1360
+        width: 218
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d976847085b688d43970a850d3eeed0b
+      internalID: 671830939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_btnaccept
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 542
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be92c2af629ff2d48b1317ed556fb294
+      internalID: -1237170948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_btnCancel
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 542
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babdba00b7a5d3d46a1c47e11a71e140
+      internalID: -537620261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_button
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1255
+        width: 120
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ee0a3acd454145a7001efcf7113d4
+      internalID: 1761800852
       vertices: []
       indices: 
       edges: []
@@ -271,9 +334,14 @@ TextureImporter:
       UI_Sprite_Arrow: 1835887459
       UI_Sprite_Dart: -529513651
       UI_Sprite_Spike: 1580057080
+      UI_StageSelect: 762443294
+      UI_btnCancel: -537620261
+      UI_btnaccept: 414392658
+      UI_button: 1761800852
       UI_frame_: -559060959
       UI_lobby: 2053323660
       UI_logo: 1361062529
+      UI_stageSelectFrame: 671830939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
