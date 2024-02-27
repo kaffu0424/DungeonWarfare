@@ -40,14 +40,13 @@ public class Enemy : MonoBehaviour
         if(enemyData.hp <= 0)
         {
             GameManager.Instance.UseGold(enemyData.reward);
+            GameManager.Instance.GetExp(enemyData.exp);
             Finished();
         }
     }
 
     public void Finished()
     {
-        // ## TODO
-        // 1. 목표지점 도착시 플레이어 hp 감소 추가
         StopAllCoroutines();
         EnemyManager.Instance.ReturnEnemy(this);
     }
@@ -80,6 +79,7 @@ public class Enemy : MonoBehaviour
             yield return null;
         }
 
+        GameManager.Instance.GetDamage();
         Finished();
     }
 

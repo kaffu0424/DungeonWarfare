@@ -64,9 +64,9 @@ public class PlayerController : MonoBehaviour
             install_Cost = cost;
             install_type = TrapManager.Instance.GetTrapType(_id);     
         }
-        else // 돈 부족
+        else
         {
-            // 돈 부족 text 2초간 출력
+            UIManager.Instance.FailSelectTrap();
         }
     }
 

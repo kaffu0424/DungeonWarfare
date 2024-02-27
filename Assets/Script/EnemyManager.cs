@@ -30,6 +30,7 @@ public class EnemyManager : Singleton<EnemyManager>
     [Header("unity")]
     [SerializeField] private List<GameObject> enemyPrefabs;
 
+    private List<Enemy> tmp_enemy;
     private List<Queue<Enemy>> enemys;
     private List<EnemyData> enemy_Data;
 
@@ -41,15 +42,16 @@ public class EnemyManager : Singleton<EnemyManager>
     {
         enemy_Data = new List<EnemyData>
         {
-            new EnemyData(0, "농민", "약하고 느립니다.", 5, 1, 1, 2, 5, 10),
-            new EnemyData(1, "귀족", "현상금이 높습니다.", 5, 1, 1, 2, 100, 5),
-            new EnemyData(2, "모험가", "빠릅니다.", 6, 1, 1, 3, 5, 10),
-            new EnemyData(3, "전사", "처음 가해지는 피해를 방어합니다.", 10, 1, 1, 2, 5, 20),
-            new EnemyData(4, "도둑", "매우 빠릅니다.", 6, 1, 1, 4, 10, 25),
+            new EnemyData(0, "농민", "약하고 느립니다.", 5, 1, 1, 1.5f, 5, 10),
+            new EnemyData(1, "귀족", "현상금이 높습니다.", 5, 1, 1, 1.5f, 100, 5),
+            new EnemyData(2, "모험가", "빠릅니다.", 6, 1, 1, 2.5f, 5, 10),
+            new EnemyData(3, "전사", "처음 가해지는 피해를 방어합니다.", 10, 1, 1, 1.5f, 5, 20),
+            new EnemyData(4, "도둑", "매우 빠릅니다.", 6, 1, 1, 3.5f, 10, 25),
             new EnemyData(5, "기사", "무겁고 느립니다.", 30, 4, 1, 1, 10, 50)
         };
 
         enemys = new List<Queue<Enemy>>();
+        tmp_enemy = new List<Enemy>();
         for(int i = 0; i < enemy_Data.Count; i++)
         {
             EnemyData data = enemy_Data[i];
@@ -60,6 +62,8 @@ public class EnemyManager : Singleton<EnemyManager>
                 enemy.InitEnemy(data);
                 enemy.gameObject.SetActive(false);
                 enemys[data.id].Enqueue(enemy);
+
+                tmp_enemy.Add(enemy);
             }
         }
     }
@@ -72,6 +76,7 @@ public class EnemyManager : Singleton<EnemyManager>
             _enemy.InitEnemy(enemy_Data[_id]);
             _enemy.gameObject.SetActive(false);
             enemys[_id].Enqueue(_enemy);
+            tmp_enemy.Add(_enemy);
         }
         Enemy enemy = enemys[_id].Peek();
         enemy.gameObject.SetActive(true);
@@ -88,6 +93,19 @@ public class EnemyManager : Singleton<EnemyManager>
         // ## TODO
         // 몬스터 사망 이펙트 추가하기 !
     }
+
+    public void AllReturnEnemy()
+    { 
+        foreach(Enemy enemy in tmp_enemy) 
+        {
+            if (enemy.gameObject.activeSelf)
+            {
+                enemy.Finished();
+            }
+        }
+    }
+
+
     public void PathFinding()
     {
         paths = new List<List<Node>>();

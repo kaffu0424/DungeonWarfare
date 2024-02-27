@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DartBullet" Collapsed="true">
+    <Position X="10.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Script\DartBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAIEIgAAAAEIAQAAAAAAAAAAAAAAAAAAAAUAAA=</HashCode>
+      <FileName>Assets\Script\Enemy\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyData" Collapsed="true">
+    <Position X="14.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAggAAIAAAAAAAAAAEAAAAAABAAAAAAgA=</HashCode>
+      <FileName>Assets\Script\Enemy\EnemyData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Node" Collapsed="true">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBgGEAQAAA=</HashCode>
+      <FileName>Assets\Script\EnemyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyManager" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEABAAASAAAAAAAAAKAAAAAAABCAAAAAEAQoAABAI=</HashCode>
+      <FileName>Assets\Script\EnemyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACFACRAAAwgEAQEEEgAAAEAAAAIACAAQDABAAAABAIA=</HashCode>
+      <FileName>Assets\Script\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerController" Collapsed="true">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAhIAACABAAAhDAAIDUJAABJAEBEAEBAAgAAABAA=</HashCode>
+      <FileName>Assets\Script\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetStageData" Collapsed="true">
+    <Position X="14.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Script\SetStageData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Singleton&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Script\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StageData" Collapsed="true">
+    <Position X="10.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAIAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\StageData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DartTrap" Collapsed="true">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAACAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Trap\DartTrap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpikeTrap" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAQAACAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Trap\SpikeTrap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trap" Collapsed="true">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAEAAAAAAAACAAAIAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Trap\Trap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapData" Collapsed="true">
+    <Position X="12.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAIAAAAAIAAAAACAAAgAAAABAIAAIAA=</HashCode>
+      <FileName>Assets\Script\Trap\TrapData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapManager" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACJAAMAAAAAAAAAAEAAgAQAAgABEAAAEAAAEAAAA=</HashCode>
+      <FileName>Assets\Script\TrapManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIManager" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACARAIBoACAAAIAAEEIAEAoKAAACABABAAABIBBIg=</HashCode>
+      <FileName>Assets\Script\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TrapDirection" Collapsed="true">
+    <Position X="12.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAgAAARAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InstallType" Collapsed="true">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Trap\TrapData.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

@@ -6,12 +6,16 @@ using UnityEngine;
 public class TrapManager : Singleton<TrapManager>
 {
     private List<TrapData> trap_Data;
+
+    [Header("unity")]
     [SerializeField] private List<GameObject> trap_Prefabs;
     [SerializeField] private List<Sprite> trap_Sprite;
+    [SerializeField] private Transform trap_transform;
 
     [Header("Object pool")]
     [SerializeField] private GameObject dartBullet_prefab;
     [SerializeField] private Queue<DartBullet> dartBullets;
+
     protected override void InitManager()
     {
         trap_Data = new List<TrapData>
@@ -91,4 +95,12 @@ public class TrapManager : Singleton<TrapManager>
         dartBullets.Enqueue(bullet);                // queue »ðÀÔ
     }
     #endregion
+
+    public void DestoryTrap()
+    {
+        for (int i = 0; i < trap_transform.childCount; i++)
+        {
+            Destroy(trap_transform.GetChild(i).gameObject);
+        }
+    }
 }
