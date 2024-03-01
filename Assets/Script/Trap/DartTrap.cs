@@ -22,6 +22,7 @@ public class DartTrap : Trap
             );
 
         trap_ani = GetComponent<Animator>();
+        trap_audio = GetComponent<AudioSource>();
     }
     protected override void Attack()
     {

@@ -8,6 +8,7 @@ public abstract class Trap : MonoBehaviour
     protected TrapData trap_data;
 
     [Header("Trap infomation")]
+    [SerializeField] protected AudioSource trap_audio;
     [SerializeField] protected Animator trap_ani;
     [SerializeField] protected bool canAttack;
     
@@ -36,5 +37,15 @@ public abstract class Trap : MonoBehaviour
         trap_ani.SetTrigger("Attack");
         yield return new WaitForSeconds(trap_data.trap_delay);
         canAttack = true;
+    }
+
+    public TrapData GetData()
+    { 
+        return trap_data;
+    }
+
+    public void AttackSound()
+    {
+        trap_audio.PlayOneShot(trap_audio.clip, SoundManager.Instance.GetSFXVolume());
     }
 }

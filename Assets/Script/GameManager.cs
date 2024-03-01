@@ -148,8 +148,13 @@ public class GameManager : Singleton<GameManager>
             yield return new WaitForSeconds(3);
         }
 
+        VictoryStage();
+    }
+
+    public void VictoryStage()
+    {
         // 현재 스테이지 진행현황 +1
-        if(current_StageID >= stage_progress)
+        if (current_StageID >= stage_progress)
             stage_progress++;
 
         TrapManager.Instance.DestoryTrap();
@@ -157,13 +162,15 @@ public class GameManager : Singleton<GameManager>
 
         float bonus = 1.0f + (current_HP / 100f);           // 체력 보너스
         int total = Mathf.RoundToInt(current_exp * bonus);  // 총 획득 경험치
-        AddPlayerExp(total);                                
+        AddPlayerExp(total);
+        SoundManager.Instance.ChangeBGM(BGM.VICTORY);
         UIManager.Instance.SuccessDefensePopup(current_exp, current_HP, bonus, total);
     }
 
     public void DefenseFail()
     {
         StopAllCoroutines();
+        SoundManager.Instance.ChangeBGM(BGM.DEFEAT);
         TrapManager.Instance.DestoryTrap();
         EnemyManager.Instance.AllReturnEnemy();
         UIManager.Instance.FailDefensePopup();

@@ -24,6 +24,8 @@ AnimationClip:
       value: {fileID: 302022949, guid: 7a29e7d2d064d624ab85c6eb3f7f3cf0, type: 3}
     - time: 0.03125
       value: {fileID: 299879113, guid: 7a29e7d2d064d624ab85c6eb3f7f3cf0, type: 3}
+    - time: 0.0625
+      value: {fileID: 299879113, guid: 7a29e7d2d064d624ab85c6eb3f7f3cf0, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,12 +50,13 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 302022949, guid: 7a29e7d2d064d624ab85c6eb3f7f3cf0, type: 3}
     - {fileID: 299879113, guid: 7a29e7d2d064d624ab85c6eb3f7f3cf0, type: 3}
+    - {fileID: 299879113, guid: 7a29e7d2d064d624ab85c6eb3f7f3cf0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.0625
+    m_StopTime: 0.09375
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,6 +78,13 @@ AnimationClip:
   m_Events:
   - time: 0.03125
     functionName: Attack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.0625
+    functionName: AttackSound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

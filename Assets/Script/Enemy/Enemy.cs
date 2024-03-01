@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyData enemyData;
 
     [SerializeField] private Vector2 target;
+
+    private float maxHP;
     public void InitEnemy(EnemyData data)
     {
         enemyData = new EnemyData(
@@ -21,6 +23,8 @@ public class Enemy : MonoBehaviour
             data.moveSpped, 
             data.reward, 
             data.exp);
+
+        maxHP = data.hp;
     }
 
     public void ResetEnemy(int _hp)
@@ -36,9 +40,10 @@ public class Enemy : MonoBehaviour
     public void GetDamage(int damage)
     {
         enemyData.hp -= damage;
-
-        if(enemyData.hp <= 0)
+        SoundManager.Instance.EnemyHitSFX();
+        if (enemyData.hp <= 0)
         {
+            SoundManager.Instance.GetGoldSFX();
             GameManager.Instance.UseGold(enemyData.reward);
             GameManager.Instance.GetExp(enemyData.exp);
             Finished();

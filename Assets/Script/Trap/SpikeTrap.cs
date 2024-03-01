@@ -25,6 +25,7 @@ public class SpikeTrap : Trap
 
         hitbox = GetComponent<BoxCollider2D>();
         trap_ani = GetComponent<Animator>();
+        trap_audio = GetComponent<AudioSource>();
     }
 
     protected override void Attack()

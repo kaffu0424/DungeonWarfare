@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +35,14 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI levelMouseOverText;
 
     [SerializeField] private TextMeshProUGUI failSelectTrapText;
+
+    [SerializeField] private GameObject informationUI;
+    [SerializeField] private TextMeshProUGUI information_Name;
+    [SerializeField] private TextMeshProUGUI information_info;
+    [SerializeField] private TextMeshProUGUI information_Damage;
+    [SerializeField] private TextMeshProUGUI information_Cooltime;
+
+
     private int selectLevel;
 
     protected override void InitManager()
@@ -56,20 +65,21 @@ public class UIManager : Singleton<UIManager>
     }
     public void WaveStart()
     {
+        SoundManager.Instance.ChangeSFX(SFX.CLICK);
+        SoundManager.Instance.WaveStartSFX();
+        SoundManager.Instance.ChangeBGM(BGM.GAME_START);
         wave_Button.gameObject.SetActive(false);
         GameManager.Instance.WaveStart();
     }
-
     public void FailSelectTrap()
     {
         if (failSelectTrapText.gameObject.activeSelf)
             return;
 
         failSelectTrapText.gameObject.SetActive(true);
-        StartCoroutine(failTrap());
+        StartCoroutine(FailTrap());
     }
-
-    IEnumerator failTrap()
+    IEnumerator FailTrap()
     {
         // 투명도 초기화
         Color _color = failSelectTrapText.color;
@@ -85,34 +95,56 @@ public class UIManager : Singleton<UIManager>
 
         failSelectTrapText.gameObject.SetActive(false);
     }
+
+    public void InformationUI(bool bvalue)
+    {
+        informationUI.SetActive(bvalue);
+    }
+    public void UpdateTrapInfomation(TrapData data)
+    {
+        information_Name.text = data.trap_name;
+        information_info.text = "";
+        information_Damage.text = "피해 : " + data.trap_damage.ToString();
+        information_Cooltime.text = "쿨타임 : " + data.trap_delay.ToString();
+    }
+    public void UpdateEnemyInfomation(EnemyData data)
+    {
+        information_Name.text = data.name;
+        information_info.text = data.description;
+        information_Damage.text = "피해 : " + data.damage.ToString();
+        information_Cooltime.text = "";
+    }
     #endregion
 
     #region Stage Select Popup
     public void SelectStage(int stageLevel)
     {
+        SoundManager.Instance.ChangeSFX(SFX.CLICK);
+
         selectLevel = stageLevel;
         stage_name.text = "스테이지 " + (selectLevel + 1);
-        StagePopupOn();
+        StagePopup(true);
     }
-    public void StagePopupOn()
+    public void StagePopup(bool bValue)
     {
-        stage_popup.gameObject.SetActive(true);
-    }
-    public void StagePopupOff()
-    {
-        stage_popup.gameObject.SetActive(false);
+        stage_popup.gameObject.SetActive(bValue);
     }
     public void ConfirmStage()
     {
+        SoundManager.Instance.ChangeSFX(SFX.CLICK);
+
         wave_Button.gameObject.SetActive(true);
         game_UI.SetActive(true);
         lobby_UI.SetActive(false);
 
         GameManager.Instance.StageStart(selectLevel);
+        SoundManager.Instance.ChangeBGM(BGM.GAME_SETUP);
     }
     public void CancleStage()
     {
-        StagePopupOff();
+        SoundManager.Instance.ChangeSFX(SFX.CLICK);
+
+        StagePopup(false);
     }
     #endregion
 
@@ -130,6 +162,11 @@ public class UIManager : Singleton<UIManager>
     {
         fail_UI.SetActive(true);
     }
+    public void ResultUIButton()
+    {
+        SoundManager.Instance.ChangeSFX(SFX.CLICK);
+        OnLobby();
+    }
     #endregion
 
     #region Lobby UI
@@ -143,9 +180,10 @@ public class UIManager : Singleton<UIManager>
                 stage_select[i].interactable = false;
         }
     }
-
     public void OnLobby()
     {
+        SoundManager.Instance.ChangeBGM(BGM.LOBBY);
+
         lobby_UI.SetActive(true);
 
         wave_Button.gameObject.SetActive(false);
@@ -160,8 +198,9 @@ public class UIManager : Singleton<UIManager>
         ExpBarGaugeView();
 
         MouserOverLevel(false);
-    }
 
+        InformationUI(false);
+    }
     public void ExpBarGaugeView()
     {
         player_level.text = GameManager.Instance.p_level.ToString();
@@ -170,7 +209,6 @@ public class UIManager : Singleton<UIManager>
         player_expGauge.fillAmount = amout;
         player_expGaugeEff.fillAmount = amout;
     }
-
     public void MouserOverLevel(bool bValue)
     {
         // 마우스 올릴때 마다 정보 최신화
@@ -180,7 +218,6 @@ public class UIManager : Singleton<UIManager>
         expMouseOverText.gameObject.SetActive(bValue);
         mouserOverPopup.SetActive(bValue);
     }
-
     void LevelInformation()
     {
         int playerLevel = GameManager.Instance.p_level;
@@ -197,14 +234,8 @@ public class UIManager : Singleton<UIManager>
     /*
      TODO:UI,사운드,이펙트
         UI
-        1. 설치된 함정들의 정보 추가 ( mouseOver )
-        2. 몬스터 체력바 추가
-
-        사운드
-        1. 몬스터 사운드 추가
-        2. 함정 사운드 추가
-        3. 배경음 추가
-        4. 기타 효과음 추가
+        1. 몬스터 체력바 추가
+        2. 몬스터 사망시 획득한 골드/경험치 잠시 표시하기 추가
 
         이펙트
         1. 몬스터 사망 이펙트 추가

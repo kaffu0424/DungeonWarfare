@@ -748,7 +748,7 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -769,7 +769,7 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -790,7 +790,7 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -811,7 +811,7 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -819,6 +819,27 @@ TextureImporter:
       bones: []
       spriteID: 9ddadd02e1c1f3d4da2b8f117d1460ea
       internalID: -418967057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DartBullet_sprite
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 61
+        width: 1
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f39432d5e89b55478b3ad2748afee7d
+      internalID: -610377299
       vertices: []
       indices: 
       edges: []
@@ -834,6 +855,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      DartBullet_sprite: -610377299
       Object_Sprite_2: 1194836143
       Object_Sprite_DartBullet: -2025426637
       Object_Sprite_Dart_1: 302022949

@@ -466,6 +466,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: HPbar
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1142
+        width: 8
+        height: 102
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a312f310eedd7544b0879ed064b2805
+      internalID: 1844232186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -477,6 +498,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      HPbar: 1844232186
       UI_ExpBar: 1559272240
       UI_HP: 236540494
       UI_Sprite_0: 883332393

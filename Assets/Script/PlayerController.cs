@@ -55,6 +55,8 @@ public class PlayerController : MonoBehaviour
 
     public void SelectTrap(int _id)
     {
+        SoundManager.Instance.ChangeSFX(SFX.CLICK);
+
         int cost = TrapManager.Instance.GetTrapCost(_id);
         int curGold = GameManager.Instance.p_gold;
         if (curGold >= cost)
@@ -178,11 +180,19 @@ public class PlayerController : MonoBehaviour
 
     void install(Vector3 rotate)
     {
-        install_positionData[(int)select_Sprite.transform.position.y, (int)select_Sprite.transform.position.x] = true;
-        GameObject obj = Instantiate(select_Object, select_Sprite.transform.position, Quaternion.Euler(rotate));
-        obj.transform.parent = trap_parent;
-        GameManager.Instance.UseGold(-install_Cost);
-        CancelTrap();
+        try
+        {
+            SoundManager.Instance.ChangeSFX(SFX.TRAPINSTALL);
+            install_positionData[(int)select_Sprite.transform.position.y, (int)select_Sprite.transform.position.x] = true;
+            GameObject obj = Instantiate(select_Object, select_Sprite.transform.position, Quaternion.Euler(rotate));
+            obj.transform.parent = trap_parent;
+            GameManager.Instance.UseGold(-install_Cost);
+            CancelTrap();
+        }
+        catch
+        {
+            CancelTrap();
+        }
     }
 
     void CheckCanInstall()
@@ -263,10 +273,4 @@ public class PlayerController : MonoBehaviour
         stage_data = data;
         install_positionData = new bool[data.size_y, data.size_x];
     }
-
-    /*
-     * ## TODO
-     * 설치 타입에 따른 설치 가능 ( 초록) / 불가능(빨강) 표시
-     * 
-     */
 }
