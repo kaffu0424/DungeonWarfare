@@ -1,0 +1,15 @@
+stage_0
+
+left -7
+right 22
+bottom -3
+top 14
+camera Position  7.5 , 5.5 , -10
+
+stage_1
+
+left -10
+right 25
+bottom -7
+top 24
+camera Position  7.5 , 5.5 , -10

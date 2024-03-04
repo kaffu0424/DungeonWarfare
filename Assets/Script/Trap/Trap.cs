@@ -35,6 +35,7 @@ public abstract class Trap : MonoBehaviour
     IEnumerator AttackDelay()
     {
         trap_ani.SetTrigger("Attack");
+
         yield return new WaitForSeconds(trap_data.trap_delay);
         canAttack = true;
     }

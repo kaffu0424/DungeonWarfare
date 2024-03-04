@@ -81,6 +81,7 @@ public class EnemyManager : Singleton<EnemyManager>
         Enemy enemy = enemys[_id].Peek();
         enemy.gameObject.SetActive(true);
         enemys[_id].Dequeue();
+
         return enemy;
     }
 
@@ -90,8 +91,6 @@ public class EnemyManager : Singleton<EnemyManager>
         enemy.ResetEnemy(enemy_Data[data.id].hp);
         enemy.gameObject.SetActive(false);
         enemys[data.id].Enqueue(enemy);
-        // ## TODO
-        // 몬스터 사망 이펙트 추가하기 !
     }
 
     public void AllReturnEnemy()
@@ -176,8 +175,6 @@ public class EnemyManager : Singleton<EnemyManager>
 
 
     }
-
-
     void OpenListAdd(bool diagonal, int nextY, int nextX, ref Node curNode, ref List<Node> openList, ref List<Node> closeList, ref Node[,] nodeArray,ref StageData stage, ref Node targetNode)
     {
         // 범위를 벗어남

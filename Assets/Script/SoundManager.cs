@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
-
+using UnityEngine.UI;
 
 public enum BGM
 {
@@ -41,44 +40,64 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField] private AudioSource object_GetGold;
     [SerializeField] private List<AudioClip> clips_GetGold;
 
+    [SerializeField] private Slider slider_BGM;
+    [SerializeField] private Slider slider_SFX;
+
     [Header("info")]
     [SerializeField] private float volume_BGM;
     [SerializeField] private float volume_SFX;
     protected override void InitManager()
     {
         // TODO:볼륨 저장 -> 저장된 값으로 초기화  추가하기
+
         volume_BGM = 0.25f;
         volume_SFX = 0.25f;
 
         object_BGM.volume = volume_BGM;
         object_SFX.volume = volume_SFX;
+
+        
+        slider_BGM.value = volume_BGM;
+        slider_SFX.value = volume_SFX;
+
+        slider_BGM.onValueChanged.AddListener(delegate { ChangeBGMVolume(); });
+        slider_SFX.onValueChanged.AddListener(delegate { ChangeSFXVolume(); });
     }
 
     public void ChangeBGM(BGM _mode)
     {
         // Victory 브금 동작중 Lobby로 이동시 코루틴 멈춰서 빅토리 브금 안나오도록 수정
-        StopAllCoroutines(); 
+        StopAllCoroutines();
 
-        object_BGM.loop = true;
+        object_BGM.clip = clips_BGM[(int)_mode]; // 클립 선택
 
-        object_BGM.clip = clips_BGM[(int)_mode];
-        object_BGM.Play();
-
-        if(_mode == BGM.VICTORY)
+        switch (_mode)
         {
-            object_BGM.loop = false;
-            StartCoroutine(VictoryBGM());
+            case BGM.LOBBY:
+                object_BGM.loop = true;
+                break;
+            case BGM.GAME_SETUP:
+                object_BGM.loop = true;
+                break;
+            case BGM.GAME_START:
+                object_BGM.loop = true;
+                break;
+            case BGM.VICTORY:
+                object_BGM.loop = false;
+                StartCoroutine(VictoryBGM());
+                break;
+            case BGM.DEFEAT:
+                object_BGM.loop = false;
+                break;
         }
-        else if(_mode == BGM.DEFEAT)
-        {
-            object_BGM.loop = false;
-        }
+
+        object_BGM.Play();  // 클립 실행
     }
 
     IEnumerator VictoryBGM()
     {
         yield return new WaitForSeconds(6f);
-        object_Victory.PlayOneShot(clips_BGM[(int)BGM.VICTORY], volume_BGM);
+        object_Victory.PlayOneShot(object_Victory.clip, volume_BGM);
     }
 
     public void ChangeSFX(SFX _mode)
@@ -113,4 +132,16 @@ public class SoundManager : Singleton<SoundManager>
     {
         return volume_SFX;
     }
+
+    #region 음량 조절
+    void ChangeBGMVolume()
+    {
+        volume_BGM = slider_BGM.value;
+        object_BGM.volume = volume_BGM;
+    }
+    void ChangeSFXVolume()
+    {
+        volume_SFX = slider_SFX.value;
+    }
+    #endregion
 }

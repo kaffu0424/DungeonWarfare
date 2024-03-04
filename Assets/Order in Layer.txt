@@ -9,3 +9,7 @@ Trap
 
 Player
  TrapSprite		: 85
+
+ Enemy
+  enemyObject 20
+  enemyHPbar  81

@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Object_Sprite_DartBullet
+      name: Object_Sprite_BoltBullet
       rect:
         serializedVersion: 2
         x: 55
@@ -832,7 +832,7 @@ TextureImporter:
         width: 1
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -840,6 +840,90 @@ TextureImporter:
       bones: []
       spriteID: 3f39432d5e89b55478b3ad2748afee7d
       internalID: -610377299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Bolt_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 563
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6f8527f57caef4d81373faecdd4640
+      internalID: 1746700897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Bolt_1
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 551
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809778c62b1fd914da5b22b79c65a573
+      internalID: -2046757382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_Sprite_Bolt_3
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 582
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b8d1fe225d7174884dd50277c62cd7
+      internalID: -1652943365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Object_SlimeTrap
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 956
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10eadf6c69459ca45ba9ffee645539b4
+      internalID: -1949977820
       vertices: []
       indices: 
       edges: []
@@ -856,8 +940,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       DartBullet_sprite: -610377299
-      Object_Sprite_2: 1194836143
-      Object_Sprite_DartBullet: -2025426637
+      Object_SlimeTrap: -1949977820
+      Object_Sprite_1: -1067410199
+      Object_Sprite_BoltBullet: -2025426637
+      Object_Sprite_Bolt_0: 1806665609
+      Object_Sprite_Bolt_1: 1194836143
+      Object_Sprite_Bolt_2: 1746700897
+      Object_Sprite_Bolt_3: -1652943365
       Object_Sprite_Dart_1: 302022949
       Object_Sprite_Dart_2: 299879113
       Object_Sprite_Spike_1: 130913480

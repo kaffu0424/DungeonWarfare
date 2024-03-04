@@ -487,6 +487,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI_Sprite_BoltTrap
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 579
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df2c660ca4ecb94996a15882f9d005d
+      internalID: 967793379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_SettingPopup
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1838
+        width: 136
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dcbd30e29630841897aeda5414eebd
+      internalID: 1463203928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Setting_Button
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 445
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bea11f2e825a6f4392ff15be27dec2e
+      internalID: -1234405798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_SoundON
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 542
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99f5ac3aeab1384d927fb50508ad70f
+      internalID: -330515918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Sound_Off
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 542
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca09ba217ab9f044bc1e8a70f3c60b3
+      internalID: -1321877140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Handle
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1346
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2c9d8553ce4d7459dc65f023a71d31
+      internalID: -1364666199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Option
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1025
+        width: 123
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9524c8e2420cce499a9fbf634bdd8e1
+      internalID: 1509166784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Sprite_SlimeTrap
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 618
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb24ef74f3b47c42b059559ff4680df
+      internalID: 1509540669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -501,11 +669,19 @@ TextureImporter:
       HPbar: 1844232186
       UI_ExpBar: 1559272240
       UI_HP: 236540494
+      UI_Handle: -1364666199
+      UI_Option: 1509166784
+      UI_SettingPopup: 1463203928
+      UI_Setting_Button: -1234405798
+      UI_SoundON: -330515918
+      UI_Sound_Off: -1321877140
       UI_Sprite_0: 883332393
       UI_Sprite_1: 1818070539
       UI_Sprite_2: -1288433839
       UI_Sprite_Arrow: 1835887459
+      UI_Sprite_BoltTrap: 967793379
       UI_Sprite_Dart: -529513651
+      UI_Sprite_SlimeTrap: 1509540669
       UI_Sprite_Spike: 1580057080
       UI_StageSelect: 762443294
       UI_btnCancel: -537620261

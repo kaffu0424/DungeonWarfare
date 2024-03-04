@@ -12,15 +12,14 @@ public class DartBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-            Debug.Log("??");
             rb.velocity = Vector2.zero;
             TrapManager.Instance.ReturnDartBullet(this);
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("????");
-            rb.velocity = Vector2.zero;
             collision.gameObject.GetComponent<Enemy>().GetDamage(damage);
+
+            rb.velocity = Vector2.zero;
             TrapManager.Instance.ReturnDartBullet(this);
         }
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.AI;
 using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
@@ -10,7 +11,13 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private Vector2 target;
 
+    [SerializeField] private GameObject enemyObject;
+    [SerializeField] private Transform enemy_hpbar;
+
+    private bool onDead;
+
     private float maxHP;
+    private float beforeSpeed;
     public void InitEnemy(EnemyData data)
     {
         enemyData = new EnemyData(
@@ -25,11 +32,13 @@ public class Enemy : MonoBehaviour
             data.exp);
 
         maxHP = data.hp;
+        beforeSpeed = enemyData.moveSpped;
     }
 
     public void ResetEnemy(int _hp)
     {
         enemyData.hp = _hp;
+        enemyData.moveSpped = beforeSpeed;
     }
 
     public EnemyData GetData()
@@ -37,10 +46,21 @@ public class Enemy : MonoBehaviour
         return enemyData;
     }
 
+
+    public void ResetSpeed()
+    {
+        enemyData.moveSpped = beforeSpeed;
+    }
+    public void SpeedDebuff(float amount)
+    {
+        enemyData.moveSpped *= amount;
+    }
+
     public void GetDamage(int damage)
     {
         enemyData.hp -= damage;
         SoundManager.Instance.EnemyHitSFX();
+        enemy_hpbar.localScale = new Vector3(1, enemyData.hp / maxHP , 1);
         if (enemyData.hp <= 0)
         {
             SoundManager.Instance.GetGoldSFX();
@@ -53,6 +73,7 @@ public class Enemy : MonoBehaviour
     public void Finished()
     {
         StopAllCoroutines();
+        enemy_hpbar.localScale = Vector3.one; // HP바 초기화
         EnemyManager.Instance.ReturnEnemy(this);
     }
 
@@ -91,6 +112,6 @@ public class Enemy : MonoBehaviour
     void RotateEnemy(Vector2 target)
     {
         Vector3 dir = new Vector3(transform.position.x - target.x, transform.position.y - target.y, 0f);
-        transform.up = dir;
+        enemyObject.transform.up = dir;
     }
 }

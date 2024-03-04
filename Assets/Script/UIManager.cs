@@ -42,7 +42,13 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI information_Damage;
     [SerializeField] private TextMeshProUGUI information_Cooltime;
 
+    [SerializeField] private GameObject trapSlotInformationUI;
+    [SerializeField] private RectTransform trapSlotInformationUIRect;
+    [SerializeField] private TextMeshProUGUI trapInformation_name;
+    [SerializeField] private TextMeshProUGUI trapInformation_gold;
 
+
+    [SerializeField] private GameObject settingUI;
     private int selectLevel;
 
     protected override void InitManager()
@@ -111,8 +117,24 @@ public class UIManager : Singleton<UIManager>
     {
         information_Name.text = data.name;
         information_info.text = data.description;
-        information_Damage.text = "피해 : " + data.damage.ToString();
+        information_Damage.text = "";
         information_Cooltime.text = "";
+    }
+
+    public void MouseOverTrapSlot(bool bValue, int _id, RectTransform transform)
+    {
+        if(bValue)
+        {
+            TrapData data = TrapManager.Instance.GetData(_id);
+            trapInformation_name.text = data.trap_name;
+            trapInformation_gold.text = data.trap_cost.ToString();
+
+            trapSlotInformationUI.transform.SetParent(transform);
+
+            trapSlotInformationUIRect.offsetMin = Vector2.zero;
+            trapSlotInformationUIRect.offsetMax = Vector2.zero;
+        }
+        trapSlotInformationUI.gameObject.SetActive(bValue);
     }
     #endregion
 
@@ -193,13 +215,17 @@ public class UIManager : Singleton<UIManager>
         fail_UI.SetActive(false);
         success_UI.SetActive(false);
 
-        StageProgress();
+        StageProgress();                            // 스테이지 진행상황
 
-        ExpBarGaugeView();
+        ExpBarGaugeView();                          // 레벨 / 경험치 게이지
 
-        MouserOverLevel(false);
+        MouserOverLevel(false);                     // 레벨 마우스 Over UI
 
-        InformationUI(false);
+        InformationUI(false);                       // 오브젝트 정보 UI
+                
+        SettingUI(false);                           // Setting UI
+
+        trapSlotInformationUI.gameObject.SetActive(false);
     }
     public void ExpBarGaugeView()
     {
@@ -226,19 +252,21 @@ public class UIManager : Singleton<UIManager>
         int maxExp = playerLevel * 1000;
         expMouseOverText.text = currentExp.ToString() + " / " + maxExp.ToString();
         levelMouseOverText.text = "레벨 " + playerLevel.ToString();
-        goldMouseOverText.text =  "시작 골드 \n+ " + (2000 + (playerLevel * 50)).ToString();
+        goldMouseOverText.text =  "시작 골드 \n+ " + (4000 + (playerLevel * 200)).ToString();
     }
     #endregion
 
+    #region Setting UI
+    public void SettingUI(bool bValue)
+    {
+        // UI ON
+        if (bValue) 
+            Time.timeScale = 0;
+        // UI OFF
+        else
+            Time.timeScale = 1;
 
-    /*
-     TODO:UI,사운드,이펙트
-        UI
-        1. 몬스터 체력바 추가
-        2. 몬스터 사망시 획득한 골드/경험치 잠시 표시하기 추가
-
-        이펙트
-        1. 몬스터 사망 이펙트 추가
-        2. 함정 공격 이펙트 추가
-    */
+        settingUI.SetActive(bValue);
+    }
+    #endregion
 }

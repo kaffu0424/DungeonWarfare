@@ -8,7 +8,8 @@ using UnityEngine.EventSystems;
 enum UIType
 {
     NONE,
-    LEVEL
+    LEVEL,
+    SHOP
 }
 
 enum ObjectType
@@ -21,6 +22,8 @@ public class MouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 {
     [SerializeField] private UIType ui;
     [SerializeField] private ObjectType obj;
+    [SerializeField] private int trap_id;
+    [SerializeField] private RectTransform rectTransform;
 
     [SerializeField] private Trap trap;
     private TrapData trapData;
@@ -51,6 +54,9 @@ public class MouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             case UIType.LEVEL:
                 UIManager.Instance.MouserOverLevel(true);
                 break;
+            case UIType.SHOP:
+                UIManager.Instance.MouseOverTrapSlot(true, trap_id, rectTransform);
+                break;
         }
     }
 
@@ -62,6 +68,9 @@ public class MouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 break;
             case UIType.LEVEL:
                 UIManager.Instance.MouserOverLevel(false);
+                break;
+            case UIType.SHOP:
+                UIManager.Instance.MouseOverTrapSlot(false, trap_id, rectTransform);
                 break;
         }
     }
@@ -80,6 +89,8 @@ public class MouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 UIManager.Instance.InformationUI(true);
                 break;
             case ObjectType.ENEMY:
+                UIManager.Instance.UpdateEnemyInfomation(enemyData);
+                UIManager.Instance.InformationUI(true);
                 break;
         }
     }
@@ -94,6 +105,7 @@ public class MouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 UIManager.Instance.InformationUI(false);
                 break;
             case ObjectType.ENEMY:
+                UIManager.Instance.InformationUI(false);
                 break;
         }
     }

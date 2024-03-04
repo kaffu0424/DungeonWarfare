@@ -53,7 +53,7 @@ public class GameManager : Singleton<GameManager>
     {
         player_level = 1;
         player_exp = 0;
-        stage_progress = 0;
+        stage_progress = 2;
 
         UIManager.Instance.OnLobby();
     }
@@ -75,7 +75,7 @@ public class GameManager : Singleton<GameManager>
 
         current_StageID = stageLevel;
 
-        p_gold = 2000 + (player_level * 50);
+        p_gold = 4000 + (player_level * 200);
         UIManager.Instance.UpdateGold(p_gold);
         if (stageLevel == -1)
             return;
