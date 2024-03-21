@@ -43,15 +43,18 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField] private Slider slider_BGM;
     [SerializeField] private Slider slider_SFX;
 
+    [SerializeField] private SaveSystem saveSystem;
+
     [Header("info")]
-    [SerializeField] private float volume_BGM;
-    [SerializeField] private float volume_SFX;
+    [SerializeField] private float volume_BGM;          // 저장할것 : 배경음 볼륨
+    [SerializeField] private float volume_SFX;          // 저장할것 : 효과음 볼륨
     protected override void InitManager()
     {
         // TODO:볼륨 저장 -> 저장된 값으로 초기화  추가하기
+        VolumeData data = saveSystem.LoadVolumeData();
+        volume_BGM = data.bgm;
+        volume_SFX = data.sfx;
 
-        volume_BGM = 0.25f;
-        volume_SFX = 0.25f;
 
         object_BGM.volume = volume_BGM;
         object_SFX.volume = volume_SFX;
@@ -60,8 +63,15 @@ public class SoundManager : Singleton<SoundManager>
         slider_BGM.value = volume_BGM;
         slider_SFX.value = volume_SFX;
 
-        slider_BGM.onValueChanged.AddListener(delegate { ChangeBGMVolume(); });
-        slider_SFX.onValueChanged.AddListener(delegate { ChangeSFXVolume(); });
+        slider_BGM.onValueChanged.AddListener(delegate { 
+            ChangeBGMVolume(); 
+            saveSystem.SaveVolumeData(volume_BGM, volume_SFX); });
+
+        slider_SFX.onValueChanged.AddListener(delegate { 
+            ChangeSFXVolume(); 
+            saveSystem.SaveVolumeData(volume_BGM, volume_SFX);});
+
+        
     }
 
     public void ChangeBGM(BGM _mode)

@@ -14,15 +14,19 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private List<GameObject> stages;
 
     [Header("info")]
-    [SerializeField] private int player_level;
-    [SerializeField] private int player_exp;
-    [SerializeField] private int stage_progress;
+    [SerializeField] private int player_level;          // 저장할것 : 레벨
+    [SerializeField] private int player_exp;            // 저장할것 : 경험치
+    [SerializeField] private int stage_progress;        // 저장할것 : 스테이지 진행현황
+
     [SerializeField] private int gold;
     [SerializeField] private int current_StageID;
     [SerializeField] private int current_HP;
     [SerializeField] private int current_exp;
 
     [SerializeField] public List<StageData> StageDatas;
+
+    [Header("Save System")]
+    [SerializeField] private SaveSystem saveSystem;
     public int p_gold
     {
         get { return gold; }
@@ -51,9 +55,10 @@ public class GameManager : Singleton<GameManager>
 
     protected override void InitManager()
     {
-        player_level = 1;
-        player_exp = 0;
-        stage_progress = 2;
+        PlayerData data = saveSystem.LoadPlayerData();
+        player_level = data.playerLevel;
+        player_exp = data.playerexp;
+        stage_progress = data.stageProgress;
 
         UIManager.Instance.OnLobby();
     }
@@ -165,6 +170,8 @@ public class GameManager : Singleton<GameManager>
         AddPlayerExp(total);
         SoundManager.Instance.ChangeBGM(BGM.VICTORY);
         UIManager.Instance.SuccessDefensePopup(current_exp, current_HP, bonus, total);
+
+        saveSystem.SavePlayerData(player_level, player_exp, stage_progress);
     }
 
     public void DefenseFail()

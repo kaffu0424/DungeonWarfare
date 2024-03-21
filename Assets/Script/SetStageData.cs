@@ -11,10 +11,10 @@ public class SetStageData : MonoBehaviour
         gameManager = GameManager.Instance;
         gameManager.StageDatas = new List<StageData>();
 
-        AddStage_0();
+        AddStage();
     }
 
-    void AddStage_0()
+    void AddStage()
     {
         #region stage_0
         // 8 출발지점 , 9 도착지점
@@ -239,6 +239,61 @@ public class SetStageData : MonoBehaviour
 
         // 추가
         gameManager.StageDatas.Add(new StageData(stage_0, 15, 20, start_target, wave_data));
+        #endregion
+
+        #region stage_3
+        // 8 출발지점 , 9 도착지점
+        stage_0 = new int[11, 25]
+        {
+            { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 }, // lane  0
+            { 1,9,9,9,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9,9,9,1 }, // lane  1
+            { 1,9,9,9,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,9,9,9,1 }, // lane  2
+            { 1,9,9,9,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,9,9,9,1 }, // lane  3
+            { 1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1 }, // lane  4
+            { 1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1 }, // lane  5
+            { 1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1 }, // lane  6
+            { 1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1 }, // lane  7
+            { 1,1,8,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,8,1,1 }, // lane  8
+            { 1,1,8,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,8,1,1 }, // lane  9
+            { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 }, // lane  10
+
+        };
+
+        // 각 출발지점의 도착지점
+        start_target = new List<Tuple<Vector2Int, Vector2Int>>()
+        {
+            new Tuple<Vector2Int,Vector2Int>(new Vector2Int(9,2) , new Vector2Int(2,22)),
+            new Tuple<Vector2Int,Vector2Int>(new Vector2Int(9,22) , new Vector2Int(2,2)),
+        };
+
+        // 웨이브 데이터 
+        // 다른 저장방식 필요@@
+        wave_data = new List<List<Tuple<int, int, int>>>
+        {
+            // wave 1
+            new List<Tuple<int, int, int>>
+            {
+                new Tuple<int,int,int>(0,3,0),
+                new Tuple<int,int,int>(1,3,0),
+                new Tuple<int,int,int>(2,3,0),
+                new Tuple<int,int,int>(3,3,0),
+                new Tuple<int,int,int>(4,3,0),
+                new Tuple<int,int,int>(5,3,0),
+            },
+            // wave 2
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(0,3,1),
+                new Tuple<int,int,int>(1,3,1),
+                new Tuple<int,int,int>(2,3,1),
+                new Tuple<int,int,int>(3,3,1),
+                new Tuple<int,int,int>(4,3,1),
+                new Tuple<int,int,int>(5,3,1),
+            }
+        };
+
+        // 추가
+        gameManager.StageDatas.Add(new StageData(stage_0, 11, 25, start_target, wave_data));
         #endregion
     }
 }

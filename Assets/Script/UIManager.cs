@@ -47,8 +47,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI trapInformation_name;
     [SerializeField] private TextMeshProUGUI trapInformation_gold;
 
-
     [SerializeField] private GameObject settingUI;
+
+    [SerializeField] private GameObject exitPopup;
+
     private int selectLevel;
 
     protected override void InitManager()
@@ -267,6 +269,16 @@ public class UIManager : Singleton<UIManager>
             Time.timeScale = 1;
 
         settingUI.SetActive(bValue);
+    }
+
+    public void ExitPopUp(bool bValue)
+    {
+        exitPopup.SetActive(bValue);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
     #endregion
 }
