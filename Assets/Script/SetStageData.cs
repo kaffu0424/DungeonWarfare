@@ -223,17 +223,48 @@ public class SetStageData : MonoBehaviour
             // wave 1
             new List<Tuple<int, int, int>>
             {
-                new Tuple<int,int,int>(0,3,0),
-                new Tuple<int,int,int>(1,3,0),
-                new Tuple<int,int,int>(2,3,0),
-                new Tuple<int,int,int>(3,3,0),
-                new Tuple<int,int,int>(4,3,0),
-                new Tuple<int,int,int>(5,3,0),
+                new Tuple<int,int,int>(0,25,1),
+                new Tuple<int,int,int>(1,5,1),
+                new Tuple<int,int,int>(3,5,1),
             },
             // wave 2
             new List<Tuple<int, int, int> >
             {
-
+                new Tuple<int,int,int>(0,20,1),
+                new Tuple<int,int,int>(3,10,1),
+                new Tuple<int,int,int>(0,20,1),
+            },
+            // wave 3
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(3,15,1),
+                new Tuple<int,int,int>(1,10,1),
+                new Tuple<int,int,int>(3,15,1),
+                new Tuple<int,int,int>(2,10,1),
+                new Tuple<int,int,int>(0,20,1),
+            },
+            // wave 4
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(0,20,1),
+                new Tuple<int,int,int>(1,10,1),
+                new Tuple<int,int,int>(2,10,1),
+                new Tuple<int,int,int>(3,10,1),
+                new Tuple<int,int,int>(4,10,1),
+            },
+            // wave 5
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(5,5,1),
+                new Tuple<int,int,int>(1,10,1),
+                new Tuple<int,int,int>(0,30,1),
+            },
+            // wave 6
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(5,10,1),
+                new Tuple<int,int,int>(0,50,1),
+                new Tuple<int,int,int>(1,15,1),
             }
         };
 
@@ -273,23 +304,79 @@ public class SetStageData : MonoBehaviour
             // wave 1
             new List<Tuple<int, int, int>>
             {
-                new Tuple<int,int,int>(0,3,0),
-                new Tuple<int,int,int>(1,3,0),
-                new Tuple<int,int,int>(2,3,0),
-                new Tuple<int,int,int>(3,3,0),
-                new Tuple<int,int,int>(4,3,0),
-                new Tuple<int,int,int>(5,3,0),
+                new Tuple<int,int,int>(0,20,1),
+                new Tuple<int,int,int>(1,7,1),
+                new Tuple<int,int,int>(3,10,1),
             },
             // wave 2
             new List<Tuple<int, int, int> >
             {
-                new Tuple<int,int,int>(0,3,1),
-                new Tuple<int,int,int>(1,3,1),
-                new Tuple<int,int,int>(2,3,1),
-                new Tuple<int,int,int>(3,3,1),
-                new Tuple<int,int,int>(4,3,1),
-                new Tuple<int,int,int>(5,3,1),
-            }
+                new Tuple<int,int,int>(0,20,1),
+                new Tuple<int,int,int>(1,7,1),
+                new Tuple<int,int,int>(3,10,1),
+            },
+            // wave 3
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(1,15,0),
+                new Tuple<int,int,int>(0,5,1),
+                new Tuple<int,int,int>(0,5,0),
+                new Tuple<int,int,int>(0,5,1),
+                new Tuple<int,int,int>(0,5,0),
+                new Tuple<int,int,int>(0,5,1),
+                new Tuple<int,int,int>(0,5,0),
+                new Tuple<int,int,int>(3,5,1),
+                new Tuple<int,int,int>(3,5,0),
+                new Tuple<int,int,int>(3,5,1),
+                new Tuple<int,int,int>(3,5,0),
+                new Tuple<int,int,int>(3,5,1),
+                new Tuple<int,int,int>(3,5,0),
+                new Tuple<int,int,int>(1,15,1),
+            },
+            // wave 4
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(0,10,1),
+                new Tuple<int,int,int>(0,10,0),
+                new Tuple<int,int,int>(1,10,1),
+                new Tuple<int,int,int>(1,10,0),
+                new Tuple<int,int,int>(2,10,1),
+                new Tuple<int,int,int>(2,10,0),
+                new Tuple<int,int,int>(3,10,1),
+                new Tuple<int,int,int>(3,10,0),
+                new Tuple<int,int,int>(4,10,1),
+                new Tuple<int,int,int>(4,10,0),
+            },
+            // wave 5
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(0,15,1),
+                new Tuple<int,int,int>(0,15,0),
+                new Tuple<int,int,int>(1,15,1),
+                new Tuple<int,int,int>(1,15,0),
+                new Tuple<int,int,int>(2,15,1),
+                new Tuple<int,int,int>(2,15,0),
+                new Tuple<int,int,int>(3,15,1),
+                new Tuple<int,int,int>(3,15,0),
+                new Tuple<int,int,int>(4,15,1),
+                new Tuple<int,int,int>(4,15,0),
+            },
+            // wave 6
+            new List<Tuple<int, int, int> >
+            {
+                new Tuple<int,int,int>(0,15,1),
+                new Tuple<int,int,int>(0,15,0),
+                new Tuple<int,int,int>(1,15,1),
+                new Tuple<int,int,int>(1,15,0),
+                new Tuple<int,int,int>(2,15,1),
+                new Tuple<int,int,int>(2,15,0),
+                new Tuple<int,int,int>(3,15,1),
+                new Tuple<int,int,int>(3,15,0),
+                new Tuple<int,int,int>(4,15,1),
+                new Tuple<int,int,int>(4,15,0),
+                new Tuple<int,int,int>(5,5,1),
+                new Tuple<int,int,int>(5,5,0),
+            },
         };
 
         // Ãß°¡

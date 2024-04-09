@@ -643,7 +643,7 @@ TextureImporter:
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -651,6 +651,27 @@ TextureImporter:
       bones: []
       spriteID: cdb24ef74f3b47c42b059559ff4680df
       internalID: 1509540669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGO
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1078
+        width: 134
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaec28f565d3f54f9c7ee2d43349b72
+      internalID: 1656467035
       vertices: []
       indices: 
       edges: []
@@ -667,6 +688,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       HPbar: 1844232186
+      LOGO: 1656467035
       UI_ExpBar: 1559272240
       UI_HP: 236540494
       UI_Handle: -1364666199

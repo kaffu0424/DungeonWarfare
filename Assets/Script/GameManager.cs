@@ -169,9 +169,9 @@ public class GameManager : Singleton<GameManager>
         int total = Mathf.RoundToInt(current_exp * bonus);  // ÃÑ È¹µæ °æÇèÄ¡
         AddPlayerExp(total);
         SoundManager.Instance.ChangeBGM(BGM.VICTORY);
-        UIManager.Instance.SuccessDefensePopup(current_exp, current_HP, bonus, total);
-
         saveSystem.SavePlayerData(player_level, player_exp, stage_progress);
+
+        UIManager.Instance.SuccessDefensePopup(current_exp, current_HP, bonus, total);
     }
 
     public void DefenseFail()

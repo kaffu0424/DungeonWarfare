@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
-public struct VolumeData
+public class VolumeData
 {
     public float bgm;
     public float sfx;
@@ -16,7 +16,7 @@ public struct VolumeData
     }
 }
 
-public struct PlayerData
+public class PlayerData
 {
     public int playerLevel;
     public int playerexp;
